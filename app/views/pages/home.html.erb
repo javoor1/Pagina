@@ -1,0 +1,262 @@
+
+    <section class='text-center' id='home'>
+      <!-- <img alt='Home' class='fs faded' src='/assets/1.1.jpg'> -->
+       <%= image_tag('/assets/1/1.1.jpg', class: 'fs faded') %>
+      <div class='centered scrollFade'>
+        <h1>
+          Glas.
+        </h1>
+        <p>
+          Mueblería Mexicana
+        </p>
+      </div>
+    </section>
+    <nav data-spy='affix' id='main'>
+      <div class='logo'>
+        Glas
+      </div>
+      <ul>
+        <li>
+          <a class='home active' href='#home'>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class='about' href='#acerca'>
+            About
+          </a>
+        </li>
+        <li>
+          <a class='portfolio' href='#portfolio'>
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            Pages
+          </a>
+          <ul class='dropdown'>
+            <li>
+              <a href='blog.html'>Blog</a>
+            </li>
+            <li>
+              <a href='single.html'>Blog - single</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class='contact' href='#contact'>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class='text-center dark' id='acerca'>
+      <div class='centered medium'>
+        <h2>
+          About
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo sed nisl placerat fermentum. Suspendisse egestas libero non condimentum dictum. Quisque vulputate turpis id massa tempus, id porttitor nisi pellentesque. Mauris laoreet erat non neque venenatis mattis.
+        </p>
+      </div>
+    </section>
+    <section class='dark trans' id='portfolio'>
+      <div class='row text-center'>
+        <div class='col-md-12 block'>
+          <h2>
+            Portfolio
+          </h2>
+          <p>
+            Lorem ipsum dolor.
+          </p>
+        </div>
+
+       <!--  <div class='col-md-4'>
+          <a class='item' data-height='700' data-type='vimeo' data-video='21604065' data-width='1000' href='/test'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Vimeo video example
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='item' data-height='700' data-type='youtube' data-video='vSkb0kDacjs' data-width='1000' href='test'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  YouTube video example
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div> -->
+
+        <div class='col-md-4'>
+          <%= link_to  class: "item", controller: "pages", action: "portfolio", id: "1"  do %>  
+          <!-- <a class='item' href='/portfolio'> -->
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Urban style
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          <!-- </a> -->
+          <% end %>
+        </div>
+
+        <div class='col-md-4'>
+          <%= link_to  class: "item", controller: "pages", action: "portfolio", id: "2"  do %>  
+          <!-- <a class='item' href='/portfolio'> -->
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Urban style
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          <!-- </a> -->
+          <% end %>
+        </div>
+
+
+        <div class='col-md-4'>
+          <a class='item' href='/portfolio'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Great view
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='item' href='http://placehold.it/1200x800'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  One man mountain
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='item' href='http://placehold.it/1200x800'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  The height
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='item' href='http://placehold.it/1200x800'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Farmer fields
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='col-md-4'>
+          <a class='item' href='http://placehold.it/1200x800'>
+            <img alt='' src='http://placehold.it/400x300'>
+            <div class='caption'>
+              <div class='centered'>
+                <h3>
+                  Urban style
+                </h3>
+                <p>
+                  This is a short description.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class='white trans' id='contact'>
+      <div class='centered large'>
+        <div class='row-fluid'>
+          <div class='col-md-4'>
+            <h2>
+              Contact
+            </h2>
+            <p class='small'>
+              Suspendisse ultricies elit id consectetur pharetra. Aenean accumsan venenatis massa id mollis. Donec quis pharetra lacus. Aenean bibendum, nunc eget mollis blandit.
+            </p>
+            <div class='social-icons'>
+              <a class='icon fa fa-twitter' href='#'></a>
+              <a class='icon fa fa-facebook' href='#'></a>
+              <a class='icon fa fa-dribbble' href='#'></a>
+              <a class='icon fa fa-instagram' href='#'></a>
+            </div>
+          </div>
+          <div class='col-md-8'>
+            <h3>
+              Get in touch
+            </h3>
+            <form action='php/email.php' id='form' name='form'>
+              <div class='form-group'>
+                <input class='form-control' id='name' name='name' placeholder='Name' type='text'>
+                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' id='email' name='email' placeholder='E-mail' type='text'>
+                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' id='phone' name='phone' placeholder='Phone' type='text'>
+              </div>
+              <div class='form-group'>
+                <textarea class='form-control' id='message' name='message' placeholder='Message'></textarea>
+                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
+              </div>
+              <input class='form-control' id='send' type='submit' value='Send'>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
