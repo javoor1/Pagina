@@ -104,12 +104,12 @@ $(function(){
 			overlayIframe.css({ 'width' : videoW, 'height': videoH });
 		}
 		if(videoType == 'vimeo'){
-			overlayIframe.attr('src', 'http://player.vimeo.com/video/'+videoUrl+'').load(function(){
+			overlayIframe.attr('src', 'https://player.vimeo.com/video/'+videoUrl+'').load(function(){
 				overlayIframe.fadeIn(600);
 			});
 		}
 		if(videoType == 'youtube'){
-			overlayIframe.attr('src', 'http://www.youtube.com/embed/'+videoUrl+'').load(function(){
+			overlayIframe.attr('src', 'https://www.youtube.com/embed/'+videoUrl+'').load(function(){
 				overlayIframe.fadeIn(600);
 			});
 		}
