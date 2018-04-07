@@ -226,40 +226,46 @@
     <!-- TEST -->
     <section class="dark trans" id="portfolio">
       <ul class="grid cs-style-3">
-        <li  class="grid cs-style-3">
+
+        <li class="grid cs-style-3">
           <figure>
-            <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
+            <%= link_to "Librero", controller: "pages", action: "portfolio", id: "1" do%>
+              <img src="/assets/LIBRERO/untitled.78.jpg" alt="img01">
+            <% end %>
             <figcaption>
-              <h3>Mueble de Televisión</h3>
+              <h3>Librero</h3>
               <p>Precio $5,000</p>
-              <a href="/portfolio/1"> Test </a>
+              <%= link_to "Librero", controller: "pages", action: "portfolio", id: "1" %>
             </figcaption>
           </figure>
         </li>
 
         <li class="grid cs-style-4">
           <figure>
-            <img src="/assets/LIBRERO/untitled.78.jpg" alt="img01">
+            <%= link_to "Librero", controller: "pages", action: "portfolio", id: "1" do%>
+              <img src="/assets/5/5.4.jpg" alt="img01">
+            <% end %>
             <figcaption>
-              <h3>Librero</h3>
+              <h3>BANCA</h3>
               <p>Precio $5,000</p>
-              <%= link_to "Mueble", controller: "pages", action: "portfolio", id: "1" %>
+              <%= link_to "BANCA", controller: "pages", action: "portfolio", id: "1" %>
             </figcaption>
           </figure>
         </li>
 
-        <li class="grid cs-style-5">
+        <li class="grid cs-style-3">
           <figure>
-            <img src="/assets/5/5.4.jpg" alt="img01">
+            <%= link_to "Librero", controller: "pages", action: "portfolio", id: "1" do%>
+              <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
+            <% end %>
             <figcaption>
-              <h3>Banca</h3>
+              <h3>MUEBLE DE TV</h3>
               <p>Precio $5,000</p>
-              <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+              <%= link_to "MUEBLE TV", controller: "pages", action: "portfolio", id: "1" %>
             </figcaption>
           </figure>
         </li>
-      </ul>
-    </section>
+      </section>
 
 
 
