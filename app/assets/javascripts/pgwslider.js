@@ -6,6 +6,11 @@
  * 
  * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
  */
+
+// $(document).ready(function() {
+//     $('.pgwSlider').pgwSlider();
+// });
+
 ;(function($){
     $.fn.pgwSlider = function(options) {
 
