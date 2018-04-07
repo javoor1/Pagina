@@ -1,5 +1,3 @@
-<%= params %>
-
     <section class='text-center' id='home'>
       <!-- <img alt='Home' class='fs faded' src='http://placehold.it/1200x800'> -->
       <%= image_tag("/assets/1/1.1.jpg", class: "fs faded") %>
@@ -9,47 +7,13 @@
         </h1>
       </div>
     </section>
-    <nav data-spy='affix' id='main'>
-      <div class='logo'>
-        Sir.
-      </div>
-      <ul>
-        <li>
-          <a class='active' href='/'>
-            Home
-          </a>
-        </li>
-        <li>
-          <%= link_to  controller: "pages", action: "home", :anchor => "about" do%>
-            About
-          <% end %>
-        </li>
-        <li>
-          <%= link_to  controller: "pages", action: "home", :anchor => "portfolio" do%>
-            Portfolio
-          <% end %>
-        </li>
-        <li>
-          <a href='#'>
-            Pages
-          </a>
-          <ul class='dropdown'>
-            <li>
-              <a href='blog.html'>Blog</a>
-            </li>
-            <li>
-              <a href='single.html'>Blog - single</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class='contact' href='#contact'>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <section class='dark'>
+   
+
+    <!-- NAV BAR -->
+    <%= render 'shared/nav' %>
+
+
+    <section id="portfolio" class='dark'>
       <div class='large'>
         <div class='row'>
           <div class='col-md-7 content'>
@@ -127,45 +91,9 @@
         </div>
       </div>
     </section>
-    <section class='white trans' id='contact'>
-      <div class='row-fluid centered large'>
-        <div class='col-md-4'>
-          <h2>
-            Contact
-          </h2>
-          <p class='small'>
-            Suspendisse ultricies elit id consectetur pharetra. Aenean accumsan venenatis massa id mollis. Donec quis pharetra lacus. Aenean bibendum, nunc eget mollis blandit.
-          </p>
-          <div class='social-icons'>
-            <a class='icon fa fa-twitter' href='#'></a>
-            <a class='icon fa fa-facebook' href='#'></a>
-            <a class='icon fa fa-dribbble' href='#'></a>
-            <a class='icon fa fa-instagram' href='#'></a>
-          </div>
-        </div>
-        <div class='col-md-8'>
-          <h3>
-            Get in touch
-          </h3>
-          <form action='php/email.php' id='form' name='form'>
-            <div class='form-group'>
-              <input class='form-control' id='name' name='name' placeholder='Name' type='text'>
-              <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-            </div>
-            <div class='form-group'>
-              <input class='form-control' id='email' name='email' placeholder='E-mail' type='text'>
-              <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-            </div>
-            <div class='form-group'>
-              <input class='form-control' id='phone' name='phone' placeholder='Phone' type='text'>
-            </div>
-            <div class='form-group'>
-              <textarea class='form-control' id='message' name='message' placeholder='Message'></textarea>
-              <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-            </div>
-            <input class='form-control' id='send' type='submit' value='Send'>
-          </form>
-        </div>
-      </div>
-    </section>
+   
 
+
+    <!-- CONTACT -->
+    
+    <%= render 'contact' %>
