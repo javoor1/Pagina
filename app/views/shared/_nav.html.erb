@@ -4,40 +4,15 @@
       </div>
       <ul>
         <li>
-          <% if current_page?(action: 'home') %>
-            <a class='home active' href='#home'>
-              Home
-            </a>
-          <% else %>
-          <a class='home active' href='/'>
-            Home
-          </a>
-          <% end %>
+          <%= link_to "Home", controller: "pages", action: "home", anchor: "home" %>
         </li>
 
-
         <li>
-          <% if current_page?(action: 'home') %>
-            <a class='about' href='#about'>
-              Acerca
-            </a>
+            <%= link_to "Acerca", controller: "pages", action: "home", anchor: "about" %>
         </li>
-          <% else %>
-            <a class='about' href='/#about'>
-                Acerca
-            </a>
-           <% end %>
-        <li>
 
-          <% if current_page?(action: 'home') %>
-             <a class='portfolio' href='#portfolio'>
-              Muebles
-            </a>
-          <% else %>
-            <a class='portfolio' href='/#portfolio'>
-              Muebles
-            </a>
-          <% end %>
+        <li>
+          <%= link_to "Muebles", controller: "pages", action: "home", anchor: "portfolio" %>
         </li>
 
         <li>
@@ -53,10 +28,9 @@
             </li>
           </ul>
         </li>
+        
         <li>
-          <a class='contact' href='#contact'>
-            Contacto
-          </a>
+         <%= link_to "Contacto", anchor: "contact" %>
         </li>
       </ul>
 </nav>
