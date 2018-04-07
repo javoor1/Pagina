@@ -1,0 +1,64 @@
+<nav data-spy='affix' id='main'>
+      <div class='logo'>
+        Glas
+      </div>
+      <ul>
+        <li>
+          <% if current_page?(action: 'home') %>
+            <a class='home active' href='#home'>
+              Home
+            </a>
+          <% else %>
+          <a class='home active' href='/'>
+            Home
+          </a>
+          <% end %>
+        </li>
+
+
+        <li>
+          <% if current_page?(action: 'home') %>
+            <a class='about' href='#about'>
+              Acerca
+            </a>
+        </li>
+          <% else %>
+            <a class='about' href='/#about'>
+                Acerca
+            </a>
+           <% end %>
+        <li>
+
+          <% if current_page?(action: 'home') %>
+             <a class='portfolio' href='#portfolio'>
+              Muebles
+            </a>
+          <% else %>
+            <a class='portfolio' href='/#portfolio'>
+              Muebles
+            </a>
+          <% end %>
+        </li>
+
+        <li>
+          <a href='#'>
+            Blog
+          </a>
+          <ul class='dropdown'>
+            <li>
+              <a href='blog.html'>Blog</a>
+            </li>
+            <li>
+              <a href='single.html'>Blog - single</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class='contact' href='#contact'>
+            Contacto
+          </a>
+        </li>
+      </ul>
+</nav>
+
+
