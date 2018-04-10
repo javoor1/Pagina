@@ -9106,1157 +9106,9 @@ button.close {
   overflow: visible;
   clip: auto;
 }
-@charset "UTF-8";
-/* line 6, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-* {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/* line 8, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-html, body {
-  height: 100% !important;
-  min-height: 100%;
-  background: #ccc;
-  font-size: 16px;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 9, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  html, body {
-    font-size: 13px;
-  }
-}
-/* 
-	Typography
-*/
-/* line 14, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-h1 {
-  font-size: 5em;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 15, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  h1 {
-    font-size: 3em;
-  }
-}
-/* line 17, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-h1, h2 {
-  font-family: "Oswald", Arial, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-/* line 19, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
-}
-
-/* line 21, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-p {
-  font-size: 1.35em;
-  color: #888;
-}
-
-/* line 22, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-p.small {
-  font-size: 1em;
-}
-
-/* line 24, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-a {
-  outline: none !important;
-}
-
-/* 
-	Modes
-*/
-/* line 29, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.dark {
-  background: #000;
-  color: #555;
-}
-
-/* line 30, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #fff;
-}
-
-/* line 32, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.white {
-  background: #fff;
-}
-
-/* line 34, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.dark.trans {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* line 36, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.white.trans {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-/* line 38, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.blue {
-  background: #558099;
-  color: #afcce0;
-}
-
-/* line 39, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.blue h1, .blue h2, .blue h3, .blue h4, .blue h5, .blue h6 {
-  color: #fff;
-}
-
-/*
-	Layout
-*/
-/* line 44, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.content img {
-  margin: 20px 0;
-  max-width: 100%;
-}
-
-/* line 46, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.centered {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 250px;
-}
-
-/* line 48, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.centered.medium {
-  width: 100%;
-  max-width: 500px;
-  padding: 0 20px;
-}
-
-/* line 50, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.centered.large {
-  max-width: 920px !important;
-  padding: 20px;
-  width: 100%;
-  min-height: 400px;
-  margin: auto !important;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 51, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  .centered.large {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 992px) {
-  /* line 52, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  .centered.large {
-    position: relative !important;
-    padding: 0 !important;
-    height: auto !important;
-  }
-}
-/* line 54, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section {
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  padding: 75px 30px;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 55, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  section {
-    padding: 50px 20px;
-  }
-}
-/* line 56, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#home {
-  height: 100%;
-}
-
-/* line 57, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#home p {
-  color: #000;
-}
-
-/* line 58, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#about .centered {
-  height: 250px;
-}
-
-/* line 59, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item {
-  display: inline-block;
-  margin-bottom: 40px;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 60, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  section#portfolio .item {
-    margin-bottom: 20px;
-  }
-}
-/* line 61, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item img {
-  max-width: 100%;
-  width: 100%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 62, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item .caption {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  bottom: 20px;
-  right: 20px;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.9);
-  color: #666;
-  padding: 40px 30px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
-  filter: alpha(opacity=0);
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  opacity: 0;
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-/* line 63, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item .caption .centered {
-  height: 100px;
-}
-
-/* line 64, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item .caption h3 {
-  color: #000;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 65, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  section#portfolio .item .caption h3 {
-    font-size: 1.2em;
-  }
-}
-/* line 66, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item .caption p {
-  font-size: 1em;
-}
-
-/* line 67, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item:hover .caption {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
-  filter: alpha(opacity=100);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transform: scale(1, 1);
-  -moz-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-/* line 68, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section#portfolio .item:hover img {
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-
-/* line 69, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section.title-block {
-  height: 50% !important;
-  min-height: 50%;
-}
-
-/* line 70, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-section .block {
-  padding: 40px;
-}
-
-/* line 72, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-img.fs {
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-/* line 73, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-img.faded {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
-  filter: alpha(opacity=20);
-  -moz-opacity: 0.2;
-  -khtml-opacity: 0.2;
-  opacity: 0.2;
-  background: #000;
-}
-
-/* line 75, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-form {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* line 76, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-form .form-control {
-  margin-bottom: 10px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 77, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-form input[type='submit'].form-control {
-  margin-bottom: 0;
-  background: #000;
-  color: #fff;
-  border: 0;
-  font-family: "Oswald", Arial, sans-serif;
-  text-transform: uppercase;
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  -o-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-/* line 78, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-form input[type='submit'].form-control:hover {
-  background: #333;
-}
-
-/* line 79, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-form:hover {
-  border: 1px solid #000;
-}
-
-/* line 81, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-}
-
-/* line 82, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay img, .overlay iframe {
-  width: auto;
-  max-width: 80%;
-  max-height: 80%;
-  height: auto;
-}
-
-/* line 83, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay .fa-times, .overlay .prev, .overlay .next {
-  position: absolute;
-  top: 5%;
-  right: 3%;
-  color: #555;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 1px solid #555;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 84, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay .fa-times:hover, .overlay .prev:hover, .overlay .next:hover {
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-/* line 85, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay .prev, .overlay .next {
-  top: 50%;
-  margin-top: -20px;
-}
-
-/* line 86, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.overlay .prev {
-  left: 3%;
-  right: auto;
-}
-
-/* line 88, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.list {
-  color: #999;
-  padding: 0;
-  list-style: none;
-}
-
-/* line 89, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #222;
-}
-
-/* line 90, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.list a {
-  color: #999;
-}
-
-/* line 91, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.list a:hover {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* line 93, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-blockquote {
-  font-family: Georgia;
-  font-style: italic;
-  font-size: 1.3em;
-  color: #fff;
-  border-left: 1px solid #222;
-}
-
-/* line 95, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.btn {
-  background: #000;
-  color: #999;
-  font-family: "Oswald", Arial, sans-serif;
-  text-transform: uppercase;
-  border: 2px solid #222;
-}
-
-/* line 96, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.btn:hover {
-  background: #222;
-  color: #fff;
-}
-
-/* line 98, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.post {
-  border-bottom: 1px solid #222;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-/* line 100, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.large {
-  max-width: 1100px;
-  margin: 100px auto;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 101, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  .large {
-    margin: 0 auto;
-  }
-}
-/* line 103, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.pagination li a {
-  border-color: #222;
-  background: transparent;
-  color: #999;
-}
-
-/* line 104, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.pagination li:hover a, .pagination li.active a {
-  background: #222;
-  color: #fff;
-  border-color: #222;
-}
-
-/* line 106, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-#searchform {
-  padding: 0;
-}
-
-/* line 107, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-#searchform label {
-  width: 100%;
-  display: block;
-  float: none;
-  clear: both;
-  line-height: 50px;
-  color: #fff;
-}
-
-/* line 108, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-#searchform input[type="text"] {
-  width: 75%;
-  background: #000;
-  border: 1px solid #222;
-  float: left;
-  padding: 10px 15px;
-}
-
-/* line 109, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-#searchform input[type="submit"] {
-  width: 25%;
-  background: #222;
-  padding: 10px 5px;
-  border: 1px solid #222;
-  color: #fff;
-}
-
-/*
-	Navigation
-*/
-/* line 114, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: #000;
-  border-bottom: 1px solid #222;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 115, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main:after {
-    display: block;
-  }
-}
-/* line 116, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main .logo {
-  height: 80px;
-  line-height: 80px;
-  padding: 0 40px;
-  position: absolute;
-  left: 0;
-  color: #666;
-  font-family: "Oswald", Arial, sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 117, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main .logo {
-    padding: 0 12px;
-  }
-}
-/* line 118, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul {
-  list-style: none;
-  height: 80px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 0;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 119, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul {
-    text-align: right;
-  }
-}
-/* line 120, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li {
-  height: 80px;
-  display: inline-block;
-  border-left: 1px solid #222;
-  position: relative;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-/* line 121, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li a {
-  height: 80px;
-  display: inline-block;
-  padding: 0 40px;
-  font-size: 16px;
-  line-height: 80px;
-  color: #666;
-  font-family: "Oswald", Arial, sans-serif;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 122, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li a {
-    padding: 0 12px;
-  }
-}
-/* line 123, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li a:hover {
-  text-decoration: none;
-  background: #222;
-  color: #fff;
-}
-
-/* line 124, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li a.active {
-  background: #222;
-  color: #fff;
-}
-
-/* line 125, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li ul.dropdown {
-  position: absolute;
-  display: none;
-  bottom: 81px;
-  right: 0;
-  background: #fff;
-}
-
-/* line 126, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li ul.dropdown li {
-  display: block;
-  width: 200px;
-  height: 40px;
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
-/* line 127, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li ul.dropdown li a {
-  line-height: 40px;
-  height: 40px;
-  padding: 0;
-  color: #888;
-  display: block;
-}
-
-/* line 128, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li ul.dropdown li:hover {
-  border-top: 1px solid #ccc;
-}
-
-/* line 129, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li ul.dropdown li:hover a {
-  background: #ededed;
-  color: #000;
-}
-
-/* line 130, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li:last-child {
-  border-right: 1px solid #222;
-}
-
-/* line 131, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main ul li:hover ul.dropdown {
-  display: block;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 132, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul {
-    position: absolute;
-    width: 100%;
-    bottom: -2px;
-  }
-
-  /* line 133, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul:after {
-    font-family: 'fontAwesome';
-    content: '\f0c9';
-    height: 79px;
-    font-size: 21px;
-    width: 80px;
-    display: block;
-    line-height: 80px;
-    border-left: 1px solid #222;
-    border-bottom: 1px solid #222;
-    float: right;
-    text-align: center;
-    background: #000;
-  }
-
-  /* line 134, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li {
-    display: none;
-    min-height: 30px;
-    height: auto;
-    line-height: 30px;
-    position: relative;
-  }
-
-  /* line 135, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li ul.dropdown {
-    display: block;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-  }
-
-  /* line 136, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li ul.dropdown li {
-    width: 100%;
-    background: #222;
-    border-color: #222 !important;
-  }
-
-  /* line 137, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li ul.dropdown li a {
-    width: 100%;
-  }
-
-  /* line 138, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul li ul.dropdown:after {
-    display: none;
-  }
-
-  /* line 139, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover {
-    height: auto;
-    background: #000;
-  }
-
-  /* line 140, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover:after {
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-    content: '\f00d';
-  }
-
-  /* line 141, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li {
-    display: block;
-    float: none;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    line-height: 50px;
-    border-bottom: 0 !important;
-    border-top: 0 !important;
-  }
-
-  /* line 142, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li:hover {
-    line-height: 50px;
-  }
-
-  /* line 143, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li:hover ul.dropdown {
-    position: relative;
-    display: block;
-    width: 100%;
-    border: 0;
-  }
-
-  /* line 144, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li:hover ul.dropdown li {
-    width: 100%;
-    line-height: 50px;
-  }
-
-  /* line 145, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li:hover ul.dropdown li a {
-    width: 100%;
-  }
-
-  /* line 146, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li:hover ul.dropdown li:hover {
-    line-height: 50px;
-  }
-
-  /* line 147, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main ul.hover li a {
-    display: block;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-/* line 148, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  bottom: auto;
-  height: 40px;
-  border-bottom: 1px solid #222;
-}
-
-/* line 149, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix .logo {
-  height: 480px;
-  line-height: 40px;
-  padding: 0 10px;
-}
-
-/* line 150, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix ul {
-  height: 40px;
-}
-
-/* line 151, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix ul li {
-  height: 40px;
-}
-
-/* line 152, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix ul li a {
-  height: 40px;
-  line-height: 40px;
-}
-
-/* line 153, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix ul ul.dropdown {
-  bottom: auto;
-  top: 40px;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 154, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main.affix ul ul.dropdown {
-    top: auto;
-    bottom: auto;
-  }
-}
-/* line 155, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-nav#main.affix ul ul.dropdown li {
-  background: #fff;
-}
-
-@media screen and (max-width: 620px) {
-  /* line 156, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main.affix ul:after {
-    height: 39px;
-    line-height: 40px;
-  }
-
-  /* line 157, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main.affix ul li {
-    background: #000;
-    height: auto;
-    min-height: 40px;
-  }
-
-  /* line 158, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-  nav#main.affix ul li ul.dropdown {
-    height: auto;
-  }
-}
-/* line 160, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.social-icons {
-  margin: 20px 0;
-}
-
-/* line 162, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.icon {
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border: 1px solid #ddd;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #999;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 163, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.icon:hover {
-  color: #000;
-  text-decoration: none;
-  border: 1px solid #555;
-  -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* line 165, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.form-control-feedback {
-  display: none;
-}
-
-/* line 167, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.has-feedback .form-control-feedback {
-  display: inline-block;
-  margin-top: -24px;
-}
-
-/* line 169, /Volumes/Disco Duro Javier Ortiz/Users/JavierOrtiz/Documents/Programación/Codea/Rails Tutorial/workspace/Pagina/app/assets/stylesheets/pages.scss */
-.loader {
-  border: 2px solid #555;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-top: -25px;
-  margin-left: -25px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-animation: load 1s infinite;
-  /* Chrome, Safari, Opera */
-  animation: load .3s infinite;
-}
-
-@-webkit-keyframes load {
-  0% {
-    height: 50px;
-    -webkit-transform: rotate(0);
-  }
-  50% {
-    height: 0;
-    margin-top: 0;
-    -webkit-transform: rotate(180deg);
-  }
-  100% {
-    height: 50px;
-    margin-top: -25px;
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes load {
-  0% {
-    height: 50px;
-  }
-  50% {
-    height: 0;
-    margin-top: 0;
-  }
-  100% {
-    height: 50px;
-    margin-top: -25px;
-  }
-}
-
-* { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-
-html, body { height: 100% !important; min-height: 100%; background: #ccc; font-size: 16px; }
-@media screen and (max-width: 620px) { html, body { font-size: 13px; } }
-
-/* 
-	Typography
-*/
-h1 { font-size: 5em; }
-@media screen and (max-width: 620px) { h1 { font-size: 3em; } }
-
-h1, h2 { font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; margin-bottom: 10px; }
-
-h1, h2, h3, h4, h5, h6 { color: #000; }
-
-p { font-size: 1.35em; color: #888; }
-p.small { font-size: 1em; }
-
-a { outline: none !important; }
-
-/* 
-	Modes
-*/
-.dark { background: #000; color: #555; }
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { color: #fff; }
-
-.white { background: #fff; }
-
-.dark.trans { background: rgba(0, 0, 0, 0.8); }
-
-.white.trans { background: rgba(255, 255, 255, 0.8); }
-
-.blue { background: #558099; color: #afcce0; }
-.blue h1, .blue h2, .blue h3, .blue h4, .blue h5, .blue h6 { color: #fff; }
-
-/*
-	Layout
-*/
-.content img { margin: 20px 0; max-width: 100%; }
-
-.centered { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
-
-.centered.medium { width: 100%; max-width: 500px; padding: 0 20px; }
-
-.centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
-@media screen and (max-width: 620px) { .centered.large { margin: 0 auto; } }
-@media screen and (max-width: 992px) { .centered.large { position: relative !important; padding: 0 !important; height: auto !important; } }
-
-section { min-height: 100%; width: 100%; position: relative; padding: 75px 30px; }
-@media screen and (max-width: 620px) { section { padding: 50px 20px; } }
-section#home { height: 100%; }
-section#home p { color: #000; }
-section#about .centered { height: 250px; }
-section#portfolio .item { display: inline-block; margin-bottom: 40px; position: relative; width: 100%; overflow: hidden; }
-@media screen and (max-width: 620px) { section#portfolio .item { margin-bottom: 20px; } }
-section#portfolio .item img { max-width: 100%; width: 100%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-section#portfolio .item .caption { position: absolute; top: 20px; left: 20px; bottom: 20px; right: 20px; background: #fff; background: rgba(255, 255, 255, 0.9); color: #666; padding: 40px 30px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
-section#portfolio .item .caption .centered { height: 100px; }
-section#portfolio .item .caption h3 { color: #000; }
-@media screen and (max-width: 620px) { section#portfolio .item .caption h3 { font-size: 1.2em; } }
-section#portfolio .item .caption p { font-size: 1em; }
-section#portfolio .item:hover .caption { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); transform: scale(1, 1); }
-section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
-section.title-block { height: 50% !important; min-height: 50%; }
-section .block { padding: 40px; }
-
-img.fs { min-height: 100%; min-width: 1024px; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
-img.faded { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; background: #000; }
-
-form { margin-top: 20px; padding: 20px; border: 1px solid rgba(0, 0, 0, 0.1); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
-form .form-control { margin-bottom: 10px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
-form input[type='submit'].form-control { margin-bottom: 0; background: #000; color: #fff; border: 0; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: background 0.3s; -moz-transition: background 0.3s; -o-transition: background 0.3s; transition: background 0.3s; }
-form input[type='submit'].form-control:hover { background: #333; }
-form:hover { border: 1px solid #000; }
-
-.overlay { position: fixed; z-index: 99999; top: 0; left: 0; right: 0; bottom: 0; display: none; }
-.overlay img, .overlay iframe { width: auto; max-width: 80%; max-height: 80%; height: auto; }
-.overlay .fa-times, .overlay .prev, .overlay .next { position: absolute; top: 5%; right: 3%; color: #555; height: 40px; width: 40px; line-height: 40px; text-align: center; border: 1px solid #555; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-.overlay .fa-times:hover, .overlay .prev:hover, .overlay .next:hover { text-decoration: none; color: #fff; border: 1px solid #fff; }
-.overlay .prev, .overlay .next { top: 50%; margin-top: -20px; }
-.overlay .prev { left: 3%; right: auto; }
-
-.list { color: #999; padding: 0; list-style: none; }
-.list li { padding: 10px 0; border-bottom: 1px solid #222; }
-.list a { color: #999; }
-.list a:hover { text-decoration: none; color: #fff; }
-
-blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: #fff; border-left: 1px solid #222; }
-
-.btn { background: #000; color: #999; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; border: 2px solid #222; }
-.btn:hover { background: #222; color: #fff; }
-
-.post { border-bottom: 1px solid #222; padding: 20px 0; margin-bottom: 20px; }
-
-.large { max-width: 1100px; margin: 100px auto; }
-@media screen and (max-width: 620px) { .large { margin: 0 auto; } }
-
-.pagination li a { border-color: #222; background: transparent; color: #999; }
-.pagination li:hover a, .pagination li.active a { background: #222; color: #fff; border-color: #222; }
-
-#searchform { padding: 0; }
-#searchform label { width: 100%; display: block; float: none; clear: both; line-height: 50px; color: #fff; }
-#searchform input[type="text"] { width: 75%; background: #000; border: 1px solid #222; float: left; padding: 10px 15px; }
-#searchform input[type="submit"] { width: 25%; background: #222; padding: 10px 5px; border: 1px solid #222; color: #fff; }
-
-/*
-	Navigation
-*/
-nav#main { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main:after { display: block; } }
-nav#main .logo { height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: #666; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
-nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
-nav#main ul li { height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-nav#main ul li a { height: 80px; display: inline-block; padding: 0 40px; font-size: 16px; line-height: 80px; color: #666; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main ul li a { padding: 0 12px; } }
-nav#main ul li a:hover { text-decoration: none; background: #222; color: #fff; }
-nav#main ul li a.active { background: #222; color: #fff; }
-nav#main ul li ul.dropdown { position: absolute; display: none; bottom: 81px; right: 0; background: #fff; }
-nav#main ul li ul.dropdown li { display: block; width: 200px; height: 40px; border: 0; border-top: 1px solid #ccc; }
-nav#main ul li ul.dropdown li a { line-height: 40px; height: 40px; padding: 0; color: #888; display: block; }
-nav#main ul li ul.dropdown li:hover { border-top: 1px solid #ccc; }
-nav#main ul li ul.dropdown li:hover a { background: #ededed; color: #000; }
-nav#main ul li:last-child { border-right: 1px solid #222; }
-nav#main ul li:hover ul.dropdown { display: block; }
-@media screen and (max-width: 620px) { nav#main ul { position: absolute; width: 100%; bottom: -2px; }
-  nav#main ul:after { font-family: 'fontAwesome'; content: '\f0c9'; height: 79px; font-size: 21px; width: 80px; display: block; line-height: 80px; border-left: 1px solid #222; border-bottom: 1px solid #222; float: right; text-align: center; background: #000; }
-  nav#main ul li { display: none; min-height: 30px; height: auto; line-height: 30px; position: relative; }
-  nav#main ul li ul.dropdown { display: block; position: relative; text-align: center; width: 100%; top: auto; left: auto; right: auto; bottom: auto; }
-  nav#main ul li ul.dropdown li { width: 100%; background: #222; border-color: #222 !important; }
-  nav#main ul li ul.dropdown li a { width: 100%; }
-  nav#main ul li ul.dropdown:after { display: none; }
-  nav#main ul.hover { height: auto; background: #000; }
-  nav#main ul.hover:after { width: 100%; float: none; margin: 0 auto; content: '\f00d'; }
-  nav#main ul.hover li { display: block; float: none; width: 100%; position: relative; text-align: center; line-height: 50px; border-bottom: 0 !important; border-top: 0 !important; }
-  nav#main ul.hover li:hover { line-height: 50px; }
-  nav#main ul.hover li:hover ul.dropdown { position: relative; display: block; width: 100%; border: 0; }
-  nav#main ul.hover li:hover ul.dropdown li { width: 100%; line-height: 50px; }
-  nav#main ul.hover li:hover ul.dropdown li a { width: 100%; }
-  nav#main ul.hover li:hover ul.dropdown li:hover { line-height: 50px; }
-  nav#main ul.hover li a { display: block; width: 100%; height: 50px; line-height: 50px; } }
-nav#main.affix { position: fixed; z-index: 9999; top: 0; bottom: auto; height: 40px; border-bottom: 1px solid #222; }
-nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; }
-nav#main.affix ul { height: 40px; }
-nav#main.affix ul li { height: 40px; }
-nav#main.affix ul li a { height: 40px; line-height: 40px; }
-nav#main.affix ul ul.dropdown { bottom: auto; top: 40px; }
-@media screen and (max-width: 620px) { nav#main.affix ul ul.dropdown { top: auto; bottom: auto; } }
-nav#main.affix ul ul.dropdown li { background: #fff; }
-@media screen and (max-width: 620px) { nav#main.affix ul:after { height: 39px; line-height: 40px; }
-  nav#main.affix ul li { background: #000; height: auto; min-height: 40px; }
-  nav#main.affix ul li ul.dropdown { height: auto; } }
-
-.social-icons { margin: 20px 0; }
-
-.icon { display: inline-block; height: 45px; width: 45px; line-height: 45px; text-align: center; border: 1px solid #ddd; border: 1px solid rgba(0, 0, 0, 0.2); color: #999; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-.icon:hover { color: #000; text-decoration: none; border: 1px solid #555; -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); }
-
-.form-control-feedback { display: none; }
-
-.has-feedback .form-control-feedback { display: inline-block; margin-top: -24px; }
-
-.loader { border: 2px solid #555; width: 50px; height: 50px; position: fixed; left: 50%; top: 50%; margin-top: -25px; margin-left: -25px; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; border-radius: 50px; -webkit-animation: load 1s infinite; /* Chrome, Safari, Opera */ animation: load .3s infinite; }
-
-@-webkit-keyframes load { 0% { height: 50px; -webkit-transform: rotate(0); }
-  50% { height: 0; margin-top: 0; -webkit-transform: rotate(180deg); }
-  100% { height: 50px; margin-top: -25px; -webkit-transform: rotate(360deg); } }
-@keyframes load { 0% { height: 50px; }
-  50% { height: 0; margin-top: 0; }
-  100% { height: 50px; margin-top: -25px; } }
-
-
-
-
 
 /*GRID*/
+
 
 .row {
     display: -ms-flexbox; /* IE10 */
@@ -10300,11 +9152,13 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
 
 
 
+/*HOVER EFFECTS*/
 
 
-/*EFFECTS*/
+
+
 .grid {
-  /*padding: 10px 10px 80px 10px;*/
+  padding: 5px 10px 5px 10px;
   max-width: 1300px;
   margin: 0 auto;
   list-style: none;
@@ -10315,7 +9169,9 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
   display: inline-block;
   width: 400px;
   margin: 0;
-  padding: 0px;
+  padding: 20px;
+  /*padding-top: 20px;*/
+  /*padding-bottom: 20px;*/
   text-align: left;
   position: relative;
 }
@@ -10336,7 +9192,7 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
   top: 0;
   left: 0;
   padding: 20px;
-  background: #2c3f52;
+  background: #6b6565;
   color: #ed4e6e;
 }
 
@@ -10355,7 +9211,7 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
   padding: 5px 10px;
   border-radius: 2px;
   display: inline-block;
-  background: #ed4e6e;
+  background: #16a085;
   color: #fff;
 }
 
@@ -10696,6 +9552,430 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
     min-width: 300px;
   }
 }
+/**
+ * PgwSlider - Version 2.3
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+
+.pgwSlider {
+    width: 100%;
+    color: #fff;
+}
+
+.pgwSlider a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pgwSlider .ps-current {
+    float: left;
+    width: 74%;
+    overflow: hidden;
+    height: inherit;
+    position: relative;
+    font-size: 1rem;
+}
+
+.pgwSlider.listOnTheLeft .ps-current {
+    float: right;
+}
+
+.pgwSlider .ps-current ul {
+    width: 100%;
+}
+
+.pgwSlider .ps-current li {
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+}
+
+.pgwSlider .ps-current img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider .ps-caption {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 3;
+}
+
+ul.pgwSlider,
+.pgwSlider  ul {
+    float: right;
+    width: 25%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ul.pgwSlider.listOnTheLeft,
+.pgwSlider.listOnTheLeft > ul {
+    float: left;
+}
+
+ul.pgwSlider > li,
+.pgwSlider > .ps-list > li {
+    height: 50px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+    transition: opacity 200ms linear;
+}
+
+ul.pgwSlider > li:last-child,
+.pgwSlider > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+ul.pgwSlider > li span,
+.pgwSlider > .ps-list > li span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.pgwSlider > li:hover,
+.pgwSlider > ul > li:hover {
+    opacity: 1 !important;
+}
+
+ul.pgwSlider > li img,
+.pgwSlider > ul > li img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider .ps-prevIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    display: block;
+}
+
+.pgwSlider .ps-nextIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    display: block;
+}
+
+.pgwSlider .ps-current .ps-prev {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    padding: 20px 20px 20px 17px;
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+.pgwSlider .ps-current .ps-next {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    padding: 20px 17px 20px 20px;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+/*
+ * The media-queries are not used because IE8 doesn't support them.
+ */
+ul.pgwSlider.wide > li,
+.pgwSlider.wide > ul > li {
+    width: 100% !important;
+}
+
+.pgwSlider.narrow .ps-current {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+.pgwSlider.narrow .ps-current img {
+    width: 100%;
+    min-height: inherit;
+}
+
+.pgwSlider.narrow .ps-current,
+ul.pgwSlider.narrow,
+.pgwSlider.narrow > ul {
+    width: 100%;
+}
+
+ul.pgwSlider.narrow > li,
+.pgwSlider.narrow > .ps-list > li {
+    float: left;
+    min-height: 50px;
+    max-height: 70px;
+    min-width: 15%;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+ul.pgwSlider.narrow.listOnTheLeft > li,
+.pgwSlider.narrow.listOnTheLeft > ul > li {
+    float: right;
+}
+
+.pgwSlider.narrow .ps-caption {
+    padding: 8px;
+}
+
+.pgwSlider.narrow .ps-current .ps-prev {
+    padding: 15px 15px 15px 12px;
+    top: 40%;
+}
+
+.pgwSlider.narrow .ps-current .ps-next {
+    padding: 15px 12px 15px 15px;
+    top: 40%;
+}
+/**
+ * PgwSlider - Version 2.3
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+
+.pgwSlider{width:100%;color:#fff}
+.pgwSlider a{display:block;text-decoration:none;color:#fff}.pgwSlider .ps-current{float:left;width:74%;overflow:hidden;height:inherit;position:relative;font-size:1rem}.pgwSlider.listOnTheLeft .ps-current{float:right}.pgwSlider .ps-current ul{width:100%}.pgwSlider .ps-current li{width:100%;z-index:1;opacity:0;display:none}.pgwSlider .ps-current img{max-width:100%;min-width:100%;height:auto;display:block;transition:margin-top 250ms linear}.pgwSlider .ps-caption{position:absolute;width:100%;padding:12px;background:rgba(0,0,0,0.7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);left:0;bottom:0;display:none;z-index:3}ul.pgwSlider,.pgwSlider ul{float:right;width:25%;padding:0;list-style:none;margin:0}ul.pgwSlider.listOnTheLeft,.pgwSlider.listOnTheLeft>ul{float:left}ul.pgwSlider>li,.pgwSlider>.ps-list>li{height:50px;margin-bottom:6px;overflow:hidden;position:relative;opacity:.6;filter:alpha(opacity=60);font-size:.8rem;transition:opacity 200ms linear}ul.pgwSlider>li:last-child,.pgwSlider>ul>li:last-child{margin-bottom:0}ul.pgwSlider>li span,.pgwSlider>.ps-list>li span{display:block;width:100%;position:absolute;bottom:0;padding:5px;background:rgba(0,0,0,0.7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}ul.pgwSlider>li:hover,.pgwSlider>ul>li:hover{opacity:1 !important}ul.pgwSlider>li img,.pgwSlider>ul>li img{width:100%;min-height:100%;display:block;transition:margin-top 250ms linear}.pgwSlider .ps-prevIcon{border-color:transparent #fff transparent;border-style:solid;border-width:10px 10px 10px 0;display:block}.pgwSlider .ps-nextIcon{border-color:transparent #fff transparent;border-style:solid;border-width:10px 0 10px 10px;display:block}.pgwSlider .ps-current .ps-prev{background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endColorstr='#99000000');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";border:1px solid #777;border-left:0;border-radius:0 4px 4px 0;position:absolute;padding:20px 20px 20px 17px;left:0;top:45%;cursor:pointer}.pgwSlider .ps-current .ps-next{background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endColorstr='#99000000');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";border:1px solid #777;border-right:0;border-radius:4px 0 0 4px;position:absolute;padding:20px 17px 20px 20px;right:0;top:45%;cursor:pointer}ul.pgwSlider.wide>li,.pgwSlider.wide>ul>li{width:100% !important}.pgwSlider.narrow .ps-current{margin-bottom:6px;font-size:.8rem}.pgwSlider.narrow .ps-current img{width:100%;min-height:inherit}.pgwSlider.narrow .ps-current,ul.pgwSlider.narrow,.pgwSlider.narrow>ul{width:100%}ul.pgwSlider.narrow>li,.pgwSlider.narrow>.ps-list>li{float:left;min-height:50px;max-height:70px;min-width:15%;font-size:.7rem;margin-bottom:0}ul.pgwSlider.narrow.listOnTheLeft>li,.pgwSlider.narrow.listOnTheLeft>ul>li{float:right}.pgwSlider.narrow .ps-caption{padding:8px}.pgwSlider.narrow .ps-current .ps-prev{padding:15px 15px 15px 12px;top:40%}.pgwSlider.narrow .ps-current .ps-next{padding:15px 12px 15px 15px;top:40%}
+
+* { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+html, body { height: 100% !important; min-height: 100%; background: #ccc; font-size: 16px; }
+@media screen and (max-width: 620px) { html, body { font-size: 13px; } }
+
+/* 
+	Typography
+*/
+h1 { font-size: 5em; }
+@media screen and (max-width: 620px) { h1 { font-size: 3em; } }
+
+h1, h2 { font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5, h6 { color: #000; }
+
+p { font-size: 1.35em; color: #888; }
+p.small { font-size: 1em; }
+
+a { outline: none !important; }
+
+.logo {
+  color: white; 
+}
+
+
+/* 
+	Modes
+*/
+.dark { background: #000; color: #555; }
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { color: #fff; }
+
+.white { background: #fff; }
+
+.dark.trans { background: rgba(0, 0, 0, 0.8); }
+
+.white.trans { background: rgba(255, 255, 255, 0.8); }
+
+.blue { background: #558099; color: #afcce0; }
+.blue h1, .blue h2, .blue h3, .blue h4, .blue h5, .blue h6 { color: #fff; }
+
+/*
+	Layout
+*/
+
+
+
+.content img { margin: 20px 0; max-width: 100%; }
+
+.centered { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exms h1 { display: block; margin: auto; margin-top: -15%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exms p { display: block; margin: auto; margin-top: -7%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile h1 { display: block; margin: auto; margin-top: -40%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile p { display: block; margin: auto; margin-top: -25%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered.medium { width: 100%; max-width: 100%px; padding: 0 20px; }
+
+.centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
+@media screen and (max-width: 620px) { .centered.large { margin: 0 auto; } }
+@media screen and (max-width: 992px) { .centered.large { position: relative !important; padding: 0 !important; height: auto !important; } }
+
+section { min-height: 100%; width: 100%; position: relative; padding: 75px 30px; }
+@media screen and (max-width: 620px) { section { padding: 50px 20px; } }
+section#home { height: 100%; }
+section#home p { color: #000; }
+section#about .centered { height: 250px; }
+section#portfolio .item { display: inline-block; margin-bottom: 40px; position: relative; width: 100%; overflow: hidden; }
+@media screen and (max-width: 620px) { section#portfolio .item { margin-bottom: 20px; } }
+section#portfolio .item img { max-width: 100%; width: 100%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+section#portfolio .item .caption { position: absolute; top: 20px; left: 20px; bottom: 20px; right: 20px; background: #fff; background: rgba(255, 255, 255, 0.9); color: #666; padding: 40px 30px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+section#portfolio .item .caption .centered { height: 100px; }
+section#portfolio .item .caption h3 { color: #000; }
+@media screen and (max-width: 620px) { section#portfolio .item .caption h3 { font-size: 1.2em; } }
+section#portfolio .item .caption p { font-size: 1em; }
+section#portfolio .item:hover .caption { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); transform: scale(1, 1); }
+section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+section.title-block { height: 50% !important; min-height: 50%; }
+section .block { padding: 40px; }
+
+
+
+img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+section#portfolioslider {max-width: 100%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
+
+
+img.faded { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; background: #000; }
+
+form { margin-top: 20px; padding: 20px; border: 1px solid rgba(0, 0, 0, 0.1); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
+form .form-control { margin-bottom: 10px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; }
+form input[type='submit'].form-control { margin-bottom: 0; background: #000; color: #fff; border: 0; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: background 0.3s; -moz-transition: background 0.3s; -o-transition: background 0.3s; transition: background 0.3s; }
+form input[type='submit'].form-control:hover { background: #333; }
+form:hover { border: 1px solid #000; }
+
+.overlay { position: fixed; z-index: 99999; top: 0; left: 0; right: 0; bottom: 0; display: none; }
+.overlay img, .overlay iframe { width: auto; max-width: 80%; max-height: 80%; height: auto; }
+.overlay .fa-times, .overlay .prev, .overlay .next { position: absolute; top: 5%; right: 3%; color: #555; height: 40px; width: 40px; line-height: 40px; text-align: center; border: 1px solid #555; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.overlay .fa-times:hover, .overlay .prev:hover, .overlay .next:hover { text-decoration: none; color: #fff; border: 1px solid #fff; }
+.overlay .prev, .overlay .next { top: 50%; margin-top: -20px; }
+.overlay .prev { left: 3%; right: auto; }
+
+.list { color: #999; padding: 0; list-style: none; }
+.list li { padding: 10px 0; border-bottom: 1px solid #222; }
+.list a { color: #999; }
+.list a:hover { text-decoration: none; color: #fff; }
+
+blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: #fff; border-left: 1px solid #222; }
+
+.btn { background: #000; color: #999; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; border: 2px solid #222; }
+.btn:hover { background: #222; color: #fff; }
+
+.post { border-bottom: 1px solid #222; padding: 20px 0; margin-bottom: 20px; }
+
+.large { max-width: 1100px; margin: 100px auto; }
+@media screen and (max-width: 620px) { .large { margin: 0 auto; } }
+
+.pagination li a { border-color: #222; background: transparent; color: #999; }
+.pagination li:hover a, .pagination li.active a { background: #222; color: #fff; border-color: #222; }
+
+#searchform { padding: 0; }
+#searchform label { width: 100%; display: block; float: none; clear: both; line-height: 50px; color: #fff; }
+#searchform input[type="text"] { width: 75%; background: #000; border: 1px solid #222; float: left; padding: 10px 15px; }
+#searchform input[type="submit"] { width: 25%; background: #222; padding: 10px 5px; border: 1px solid #222; color: #fff; }
+
+/*
+	Navigation
+*/
+nav#main { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+@media screen and (max-width: 620px) { nav#main:after { display: block; } }
+nav#main .logo {  font-size: 25px;  height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: #16a085; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+@media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
+nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+@media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
+nav#main ul li { height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+nav#main ul li a { height: 80px; display: inline-block; padding: 0 40px; font-size: 16px; line-height: 80px; color: #666; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+@media screen and (max-width: 620px) { nav#main ul li a { padding: 0 12px; } }
+nav#main ul li a:hover { text-decoration: none; background: #222; color: #fff; }
+nav#main ul li a.active { background: #222; color: #fff; }
+nav#main ul li ul.dropdown { position: absolute; display: none; bottom: 81px; right: 0; background: #fff; }
+nav#main ul li ul.dropdown li { display: block; width: 200px; height: 40px; border: 0; border-top: 1px solid #ccc; }
+nav#main ul li ul.dropdown li a { line-height: 40px; height: 40px; padding: 0; color: #888; display: block; }
+nav#main ul li ul.dropdown li:hover { border-top: 1px solid #ccc; }
+nav#main ul li ul.dropdown li:hover a { background: #ededed; color: #000; }
+nav#main ul li:last-child { border-right: 1px solid #222; }
+nav#main ul li:hover ul.dropdown { display: block; }
+@media screen and (max-width: 620px) { nav#main ul { position: absolute; width: 100%; bottom: -2px; }
+  nav#main ul:after { font-family: 'fontAwesome'; content: '\f0c9'; height: 79px; font-size: 21px; width: 80px; display: block; line-height: 80px; border-left: 1px solid #222; border-bottom: 1px solid #222; float: right; text-align: center; background: #000; }
+  nav#main ul li { display: none; min-height: 30px; height: auto; line-height: 30px; position: relative; }
+  nav#main ul li ul.dropdown { display: block; position: relative; text-align: center; width: 100%; top: auto; left: auto; right: auto; bottom: auto; }
+  nav#main ul li ul.dropdown li { width: 100%; background: #222; border-color: #222 !important; }
+  nav#main ul li ul.dropdown li a { width: 100%; }
+  nav#main ul li ul.dropdown:after { display: none; }
+  nav#main ul.hover { height: auto; background: #000; }
+  nav#main ul.hover:after { width: 100%; float: none; margin: 0 auto; content: '\f00d'; }
+  nav#main ul.hover li { display: block; float: none; width: 100%; position: relative; text-align: center; line-height: 50px; border-bottom: 0 !important; border-top: 0 !important; }
+  nav#main ul.hover li:hover { line-height: 50px; }
+  nav#main ul.hover li:hover ul.dropdown { position: relative; display: block; width: 100%; border: 0; }
+  nav#main ul.hover li:hover ul.dropdown li { width: 100%; line-height: 50px; }
+  nav#main ul.hover li:hover ul.dropdown li a { width: 100%; }
+  nav#main ul.hover li:hover ul.dropdown li:hover { line-height: 50px; }
+  nav#main ul.hover li a { display: block; width: 100%; height: 50px; line-height: 50px; } }
+nav#main.affix { position: fixed; z-index: 9999; top: 0; bottom: auto; height: 40px; border-bottom: 1px solid #222; }
+nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; color: white;}
+nav#main.affix ul { height: 40px; }
+nav#main.affix ul li { height: 40px; }
+nav#main.affix ul li a { height: 40px; line-height: 40px; }
+nav#main.affix ul ul.dropdown { bottom: auto; top: 40px; }
+@media screen and (max-width: 620px) { nav#main.affix ul ul.dropdown { top: auto; bottom: auto; } }
+nav#main.affix ul ul.dropdown li { background: #fff; }
+@media screen and (max-width: 620px) { nav#main.affix ul:after { height: 39px; line-height: 40px; }
+  nav#main.affix ul li { background: #000; height: auto; min-height: 40px; }
+  nav#main.affix ul li ul.dropdown { height: auto; } }
+
+.social-icons { margin: 20px 0; }
+
+.icon { display: inline-block; height: 45px; width: 45px; line-height: 45px; text-align: center; border: 1px solid #ddd; border: 1px solid rgba(0, 0, 0, 0.2); color: #999; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.icon:hover { color: #000; text-decoration: none; border: 1px solid #555; -webkit-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); }
+
+.form-control-feedback { display: none; }
+
+.has-feedback .form-control-feedback { display: inline-block; margin-top: -24px; }
+
+.loader { border: 2px solid #555; width: 50px; height: 50px; position: fixed; left: 50%; top: 50%; margin-top: -25px; margin-left: -25px; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; border-radius: 50px; -webkit-animation: load 1s infinite; /* Chrome, Safari, Opera */ animation: load .3s infinite; }
+
+@-webkit-keyframes load { 0% { height: 50px; -webkit-transform: rotate(0); }
+  50% { height: 0; margin-top: 0; -webkit-transform: rotate(180deg); }
+  100% { height: 50px; margin-top: -25px; -webkit-transform: rotate(360deg); } }
+@keyframes load { 0% { height: 50px; }
+  50% { height: 0; margin-top: 0; }
+  100% { height: 50px; margin-top: -25px; } }
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

@@ -10,9 +10,12 @@
    
 
     <!-- NAV BAR -->
+    
+    <%= javascript_include_tag "functions.js" %>
     <%= render 'shared/nav' %>
 
     <% if mobile_device? %>
+    <%= javascript_include_tag "functions.js" %>
     <section id="portfolio" class='dark'>
       <div class='large'>
         <div class='row'>

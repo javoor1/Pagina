@@ -10,6 +10,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( sliderportfolio.js )
 Rails.application.config.assets.precompile += %w( pgwslider.js )
+Rails.application.config.assets.precompile += %w( functions.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
