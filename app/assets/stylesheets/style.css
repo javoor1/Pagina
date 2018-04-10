@@ -53,9 +53,9 @@ a { outline: none !important; }
 
 .centered#exms p { display: block; margin: auto; margin-top: -7%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
-.centered#exmsmobile h1 { display: block; margin: auto; margin-top: -60%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+.centered#exmsmobile h1 { display: block; margin: auto; margin-top: -40%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
-.centered#exmsmobile p { display: block; margin: auto; margin-top: -45%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+.centered#exmsmobile p { display: block; margin: auto; margin-top: -25%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
 .centered.medium { width: 100%; max-width: 100%px; padding: 0 20px; }
 
