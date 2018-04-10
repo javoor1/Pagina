@@ -1,13 +1,24 @@
 
     <section class='text-center' id='home'>
         <div class='centered'>
-          <% if session[:mobile_param] %>
-            <%= image_tag('/assets/5/5.4.jpg', class: 'fs faded') %>
+          <% if mobile_device? %>
+            <%= image_tag('/assets/23.0/23.2.jpg', class: 'fs faded') %>
           <% else %>
             <%= image_tag('/assets/AUXILIARES/KEYSHOT.32.jpg', class: 'fs faded') %>
           <% end %>
         </div>
-        <div class='centered'>
+
+        <% if mobile_device? %>
+          <div class='centered' id="exmsmobile">
+            <h1>
+              Glas.
+            </h1>
+            <p>
+              Mueblería Mexicana
+            </p>
+          </div>
+        <% else %>
+        <div class='centered' id="exms">
           <h1>
             Glas.
           </h1>
@@ -15,6 +26,9 @@
             Mueblería Mexicana
           </p>
         </div>
+      <% end %>
+
+        
     </section>
 
 

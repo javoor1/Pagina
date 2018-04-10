@@ -49,6 +49,14 @@ a { outline: none !important; }
 
 .centered { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
+.centered#exms h1 { display: block; margin: auto; margin-top: -15%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exms p { display: block; margin: auto; margin-top: -7%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile h1 { display: block; margin: auto; margin-top: -60%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile p { display: block; margin: auto; margin-top: -45%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
 .centered.medium { width: 100%; max-width: 100%px; padding: 0 20px; }
 
 .centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
