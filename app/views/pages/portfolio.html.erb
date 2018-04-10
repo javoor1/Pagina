@@ -94,7 +94,7 @@
 
 
     <section id="portfolioslider" class='dark'>
-      <div>
+      <div class="large">
         <script type="text/javascript">
           $(document).ready(function() {
               $('.pgwSlider').pgwSlider();
@@ -114,3 +114,16 @@
     <!-- CONTACT -->
     
     <%= render 'contact' %>
+
+
+
+
+  <% if session[:mobile_param] %>
+    <!-- about -->
+    <%= render 'about' %>
+  <% else %>
+    <section class='text-center' id='home'>
+      <h1>TEST</h1>
+    </section>
+  <% end %>
+   

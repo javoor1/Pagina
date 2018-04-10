@@ -1,19 +1,26 @@
 
     <section class='text-center' id='home'>
-      <!-- <img alt='Home' class='fs faded' src='/assets/1.1.jpg'> -->
-      <%= image_tag('/assets/AUXILIARES/KEYSHOT.32.jpg', class: 'fs faded') %>
-      <!-- <div class='centered'>
-        <h1>
-          Glas.
-        </h1>
-        <p>
-          Mueblería Mexicana
-        </p>
-      </div> -->
+        <div class='centered'>
+          <% if session[:mobile_param] %>
+            <%= image_tag('/assets/5/5.4.jpg', class: 'fs faded') %>
+          <% else %>
+            <%= image_tag('/assets/AUXILIARES/KEYSHOT.32.jpg', class: 'fs faded') %>
+          <% end %>
+        </div>
+        <div class='centered'>
+          <h1>
+            Glas.
+          </h1>
+          <p>
+            Mueblería Mexicana
+          </p>
+        </div>
     </section>
 
-    <!--  Nav bar -->
+
+    <!-- Nav bar -->
     <%= render 'shared/nav' %>
+
 
     <!-- about -->
     <%= render 'about' %>
