@@ -11,11 +11,11 @@
 
     <!-- NAV BAR -->
     
-    <%= javascript_include_tag "functions.js" %>
+    <%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also it need to includ de equal symbol "=" or the tag does not work -->
     <%= render 'shared/nav' %>
 
     <% if mobile_device? %>
-    <%= javascript_include_tag "functions.js" %>
+    <%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also it need to includ de equal symbol "=" or the tag does not work -->
     <section id="portfolio" class='dark'>
       <div class='large'>
         <div class='row'>
