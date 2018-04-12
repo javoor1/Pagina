@@ -1,10 +1,10 @@
-
+    
     <section class='text-center' id='home'>
         <div class='centered'>
           <% if mobile_device? %>
             <%= image_tag('/assets/23.0/23.2.jpg', class: 'fs faded') %>
           <% else %>
-            <%= image_tag('/assets/AUXILIARES/KEYSHOT.32.jpg', class: 'fs faded') %>
+            <%= image_tag('/assets/AUXILIARES/tv5.jpg', class: 'fs faded') %>
           <% end %>
         </div>
 
@@ -30,6 +30,7 @@
 
         
     </section>
+
 
 
     <!-- Nav bar -->
@@ -71,114 +72,195 @@
 
     <!-- TEST -->
     <section class="dark trans" id="portfolio">
-      <ul class="grid cs-style-3"> 
-
-        <li class="grid cs-style-4">
-          <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/LIBRERO/untitled.78.jpg" alt="img01" >
-            <%end%> 
-            <figcaption>
-              <h3>Librero</h3>
-              <p>Precio $5,000</p>
-              <%= link_to "TEST",  controller: "pages", action: "portfolio", id: "1" %>
-            </figcaption>
-          </figure>
-        </li>
+      <ul class="grid cs-style-3">
 
         <li class="grid cs-style-3">
           <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/5/5.4.jpg" alt="img01">
+            <%= link_to controller: "pages", action: "portfolio", id: "1", photo_id: "/assets/5/5.4.jpg" do%>
+            <%= hidden_field_tag 'tags_list' %>
+              <img  src="/assets/5/5.4.jpg" alt="img01">
             <% end %>
             <figcaption>
               <h3>BANCA</h3>
               <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
+              <%= link_to "Ir", controller: "pages", action: "portfolio", id: "1", photo_id: "/assets/5/5.4.jpg" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-4">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "15" do%>
+              <img src="/assets/LIBRERO/lib3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "15" %>
             </figcaption>
           </figure>
         </li>
 
         <li class="grid cs-style-3">
           <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
+            <%= link_to controller: "pages", action: "portfolio", id: "2" do%>
+              <img src="/assets/7/7.1.jpg" alt="img01">
             <% end %>
             <figcaption>
-              <h3>MUEBLE DE TV</h3>
+              <h3>BANCA</h3>
               <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "2" %>
             </figcaption>
           </figure>
         </li>
 
         <li class="grid cs-style-3">
           <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
+            <%= link_to controller: "pages", action: "portfolio", id: "7" do%>
+              <img src="/assets/23.0/23.2.jpg" alt="img01">
             <% end %>
             <figcaption>
               <h3>MUEBLE DE TV</h3>
               <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "7" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "8" do%>
+              <img src="/assets/24.0/24.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "8" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "14" do%>
+              <img src="/assets/AUXILIARES/tv5.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "14" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "9" do%>
+              <img src="/assets/25.0/25.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "9" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "11" do%>
+              <img src="/assets/27.0/27.1.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "11" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "12" do%>
+              <img src="/assets/28.0/28.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "12" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "5" do%>
+              <img src="/assets/21/21.3.jpg" alt="img01" >
+            <%end%> 
+            <figcaption>
+              <h3>Librero</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST",  controller: "pages", action: "portfolio", id: "5" %>
+            </figcaption>
+          </figure>
+        </li>
+
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "4" do%>
+              <img src="/assets/20/20.1.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "4" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "10" do%>
+              <img src="/assets/26.0/26.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "10" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "3" do%>
+              <img src="/assets/9/9.3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "3" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "6" do%>
+              <img src="/assets/22.0/22.3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>BANCA</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "6" %>
             </figcaption>
           </figure>
         </li>
       </ul>
 
-      <ul class="grid cs-style-3"> 
-        <li class="grid cs-style-4">
-          <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/LIBRERO/untitled.78.jpg" alt="img01" >
-            <%end%> 
-            <figcaption>
-              <h3>Librero</h3>
-              <p>Precio $5,000</p>
-              <%= link_to "TEST",  controller: "pages", action: "portfolio", id: "1" %>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="grid cs-style-3">
-          <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/5/5.4.jpg" alt="img01">
-            <% end %>
-            <figcaption>
-              <h3>BANCA</h3>
-              <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="grid cs-style-3">
-          <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
-            <% end %>
-            <figcaption>
-              <h3>MUEBLE DE TV</h3>
-              <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="grid cs-style-3">
-          <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
-              <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" alt="img01">
-            <% end %>
-            <figcaption>
-              <h3>MUEBLE DE TV</h3>
-              <p>Precio $5,000</p>
-              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "1" %>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
+        
+    
     </section>
 
 

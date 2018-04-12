@@ -21,7 +21,6 @@ $(function(){
 	});
 
 	$('nav#main a').click(function(){
-		console.log("Dentro de function.js nav#main a")
 		$('nav#main a').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -43,7 +42,6 @@ $(function(){
 	var offsetY = 50;
 
 	$('section').waypoint(function(direction){
-		console.log("Dentro de function.js section")
 		var id = $(this).attr('id');
 		$('nav#main a').removeClass('active');	
 		if(direction == 'up')

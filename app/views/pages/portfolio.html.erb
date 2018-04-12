@@ -1,6 +1,6 @@
     <section class='text-center' id='home'>
       <!-- <img alt='Home' class='fs faded' src='http://placehold.it/1200x800'> -->
-      <%= image_tag("/assets/1/1.1.jpg", class: "fs faded") %>
+      <%= image_tag(params[:photo_id], class: "fs faded") %>
       <div class='centered scrollFade medium'>
         <h1>
           We write about what we love
@@ -9,13 +9,12 @@
     </section>
    
 
-    <!-- NAV BAR -->
-    
-    <%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also it need to includ de equal symbol "=" or the tag does not work -->
+
+     <!-- NAV BAR -->
     <%= render 'shared/nav' %>
 
     <% if mobile_device? %>
-    <%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also it need to includ de equal symbol "=" or the tag does not work -->
+   
     <section id="portfolio" class='dark'>
       <div class='large'>
         <div class='row'>
