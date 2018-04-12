@@ -2,7 +2,7 @@
 
 <nav data-spy='affix' id='main'>
       <div class='logo'>
-        Glas
+        Glas.
       </div>
       <ul>
 
@@ -13,15 +13,15 @@
         </li> -->
 
         <li>
-          <%= link_to "Home", {controller: "pages", action: "home"}, anchor: "home", class: "home active"%>
+          <%= link_to "Home", {controller: "pages", action: "home", anchor: "home", class: "home active"}%>
         </li>
 
         <li>
-            <%= link_to "Acerca", controller: "pages", action: "home", anchor: "about" %>
+            <%= link_to "Acerca", {controller: "pages", action: "home", anchor: "about"} %>
         </li>
 
         <li>
-          <%= link_to "Muebles", controller: "pages", action: "home", anchor: "portfolio" %>
+          <%= link_to "Muebles", {controller: "pages", action: "home", anchor: "portfolio"} %>
         </li>
 
         <li>
