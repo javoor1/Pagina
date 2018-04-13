@@ -1,0 +1,45 @@
+<%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also it need to includ de equal symbol "=" or the tag does not work -->
+
+<nav data-spy='affix' id='main'>
+      <div class='logo'>
+        Glas.
+      </div>
+      <ul>
+
+<!--         <li>
+          <a class='home active' href='#home'>
+            test
+          </a>
+        </li> -->
+
+        <li>
+          <%= link_to "Home", {controller: "pages", action: "home", anchor: "home", class: "home active"}%>
+        </li>
+
+        <li>
+            <%= link_to "Acerca", {controller: "pages", action: "home", anchor: "about"} %>
+        </li>
+
+        <li>
+          <%= link_to "Muebles", {controller: "pages", action: "home", anchor: "portfolio"} %>
+        </li>
+
+        <li>
+          <a href='#'>
+            Blog
+          </a>
+          <ul class='dropdown'>
+            <li>
+              <a href='blog.html'>Blog</a>
+            </li>
+            <li>
+              <a href='single.html'>Blog - single</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+         <%= link_to "Contacto", anchor: "contact" %>
+        </li>
+      </ul>
+</nav>

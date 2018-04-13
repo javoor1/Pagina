@@ -10,7 +10,7 @@ html, body { height: 100% !important; min-height: 100%; background: #ccc; font-s
 h1 { font-size: 5em; }
 @media screen and (max-width: 620px) { h1 { font-size: 3em; } }
 
-h1, h2 { font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; margin-bottom: 20px; }
+h1, h2 { font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; margin-bottom: 10px; }
 
 h1, h2, h3, h4, h5, h6 { color: #000; }
 
@@ -18,6 +18,11 @@ p { font-size: 1.35em; color: #888; }
 p.small { font-size: 1em; }
 
 a { outline: none !important; }
+
+.logo {
+  color: white; 
+}
+
 
 /* 
 	Modes
@@ -37,11 +42,22 @@ a { outline: none !important; }
 /*
 	Layout
 */
+
+
+
 .content img { margin: 20px 0; max-width: 100%; }
 
 .centered { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
 
-.centered.medium { width: 100%; max-width: 500px; padding: 0 20px; }
+.centered#exms h1 { display: block; margin: auto; margin-top: -15%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exms p { display: block; margin: auto; margin-top: -7%; position: absolute; color: white !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile h1 { display: block; margin: auto; margin-top: -40%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered#exmsmobile p { display: block; margin: auto; margin-top: -25%; position: absolute; color: black !important; top: 0; left: 0; bottom: 0; right: 0; height: 250px; }
+
+.centered.medium { width: 100%; max-width: 100%px; padding: 0 20px; }
 
 .centered.large { max-width: 920px !important; padding: 20px; width: 100%; min-height: 400px; margin: auto !important; }
 @media screen and (max-width: 620px) { .centered.large { margin: 0 auto; } }
@@ -65,7 +81,12 @@ section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-tra
 section.title-block { height: 50% !important; min-height: 50%; }
 section .block { padding: 40px; }
 
-img.fs { min-height: 100%; min-width: 1024px; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+
+
+img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+section#portfolioslider {max-width: 100%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
+
+
 img.faded { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; background: #000; }
 
 form { margin-top: 20px; padding: 20px; border: 1px solid rgba(0, 0, 0, 0.1); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
@@ -109,14 +130,14 @@ blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: 
 */
 nav#main { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main:after { display: block; } }
-nav#main .logo { height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: #666; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+nav#main .logo {  font-size: 25px;  height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: white; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
 nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
 nav#main ul li { height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-nav#main ul li a { height: 80px; display: inline-block; padding: 0 40px; font-size: 16px; line-height: 80px; color: #666; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+nav#main ul li a { height: 80px; display: inline-block; padding: 0 40px; font-size: 16px; line-height: 80px; color: #16a085; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main ul li a { padding: 0 12px; } }
-nav#main ul li a:hover { text-decoration: none; background: #222; color: #fff; }
+nav#main ul li a:hover { text-decoration: none; background: #16a085; color: white; }
 nav#main ul li a.active { background: #222; color: #fff; }
 nav#main ul li ul.dropdown { position: absolute; display: none; bottom: 81px; right: 0; background: #fff; }
 nav#main ul li ul.dropdown li { display: block; width: 200px; height: 40px; border: 0; border-top: 1px solid #ccc; }
@@ -142,7 +163,7 @@ nav#main ul li:hover ul.dropdown { display: block; }
   nav#main ul.hover li:hover ul.dropdown li:hover { line-height: 50px; }
   nav#main ul.hover li a { display: block; width: 100%; height: 50px; line-height: 50px; } }
 nav#main.affix { position: fixed; z-index: 9999; top: 0; bottom: auto; height: 40px; border-bottom: 1px solid #222; }
-nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; }
+nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; color: white;}
 nav#main.affix ul { height: 40px; }
 nav#main.affix ul li { height: 40px; }
 nav#main.affix ul li a { height: 40px; line-height: 40px; }
@@ -170,3 +191,7 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
 @keyframes load { 0% { height: 50px; }
   50% { height: 0; margin-top: 0; }
   100% { height: 50px; margin-top: -25px; } }
+
+
+
+

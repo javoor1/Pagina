@@ -4,6 +4,11 @@ class PagesController < ApplicationController
 	end
 
 	def portfolio
+		puts "test"
+		params
+		p params[:photo_id]
 	end
+
+
 
 end

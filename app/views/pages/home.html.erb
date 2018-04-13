@@ -1,470 +1,267 @@
-
+    
     <section class='text-center' id='home'>
-      <!-- <img alt='Home' class='fs faded' src='/assets/1.1.jpg'> -->
-      <%= image_tag('/assets/AUXILIARES/KEYSHOT.32.jpg', class: 'fs faded') %>
-      <div class='centered'>
-        <h1>
-          Glas.
-        </h1>
-        <p>
-          Mueblería Mexicana
-        </p>
-      </div>
-    </section>
-    <nav data-spy='affix' id='main'>
-      <div class='logo'>
-        Glas
-      </div>
-      <ul>
-        <li>
-          <a class='home active' href='#home'>
-            Home
-          </a>
-        </li>
-        <li>
-          <a class='about' href='#about'>
-            About
-          </a>
-        </li>
-        <li>
-          <a class='portfolio' href='#portfolio'>
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            Pages
-          </a>
-          <ul class='dropdown'>
-            <li>
-              <a href='blog.html'>Blog</a>
-            </li>
-            <li>
-              <a href='single.html'>Blog - single</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class='contact' href='#contact'>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <section class='text-center dark' id='about'>
-      <div class='centered medium'>
-        <h2>
-          About
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo sed nisl placerat fermentum. Suspendisse egestas libero non condimentum dictum. Quisque vulputate turpis id massa tempus, id porttitor nisi pellentesque. Mauris laoreet erat non neque venenatis mattis.
-        </p>
-      </div>
-    </section>
-    <section class='dark trans' id='portfolio'>
-      <div class='row text-center'>
-        <div class='col-md-12 block'>
-          <h2>
-            Portfolio
-          </h2>
+        <div class='centered'>
+          <% if mobile_device? %>
+            <%= image_tag('/assets/23.0/23.2.jpg', class: 'fs faded') %>
+          <% else %>
+            <%= image_tag('/assets/AUXILIARES/tv5.jpg', class: 'fs faded') %>
+          <% end %>
+        </div>
+
+        <% if mobile_device? %>
+          <div class='centered'>
+            <h1>
+              Glas.
+            </h1>
+            <p>
+              Mueblería Mexicana
+            </p>
+          </div>
+        <% else %>
+        <div class='centered' id="exms">
+          <h1>
+            Glas.
+          </h1>
           <p>
-            Lorem ipsum dolor.
+            Mueblería Mexicana
           </p>
         </div>
+      <% end %>        
+    </section>
 
-       <!--  <div class='col-md-4'>
-          <a class='item' data-height='700' data-type='vimeo' data-video='21604065' data-width='1000' href='/test'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Vimeo video example
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
+
+
+    <!-- Nav bar -->
+    <%= render 'shared/nav' %>
+
+
+    <!-- about -->
+    <%= render 'about' %>
+   
+
+<!-- Photo Grid -->
+<!--<section class='dark trans' id='test'>
+      <div class="row"> 
+        <div class="column">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
         </div>
-        <div class='col-md-4'>
-          <a class='item' data-height='700' data-type='youtube' data-video='vSkb0kDacjs' data-width='1000' href='test'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  YouTube video example
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div> -->
-
-        <div class='col-md-4'>
-          <%= link_to  class: "item", controller: "pages", action: "portfolio", id: "1"  do %>  
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Urban style
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "2" do%>
-          <!-- <a class='item' href='/portfolio'> -->
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Urban style
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "3" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "4" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "5" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "6" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "7" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "8" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "9" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "10" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "11" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "12" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "13" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "14" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <!-- </a> -->
-          <% end %>
-        </div>
-
-        <div class='col-md-4'>
-          <%= link_to  controller: "pages", action: "portfolio", class: "item", id: "15" do%>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Great view
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          <% end %>
-        </div>
-
-
-        <div class='col-md-4'>
-          <a class='item' href='http://placehold.it/1200x800'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  One man mountain
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class='col-md-4'>
-          <a class='item' href='http://placehold.it/1200x800'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  The height
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-
-
-        <div class='col-md-4'>
-          <a class='item' href='http://placehold.it/1200x800'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Farmer fields
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='col-md-4'>
-          <a class='item' href='http://placehold.it/1200x800'>
-            <img alt='' src='http://placehold.it/400x300'>
-            <div class='caption'>
-              <div class='centered'>
-                <h3>
-                  Urban style
-                </h3>
-                <p>
-                  This is a short description.
-                </p>
-              </div>
-            </div>
-          </a>
+        <div class="column">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
+          <img src="/assets/AUXILIARES/KEYSHOT.32.jpg" style="width:100%">
         </div>
       </div>
+    </section> -->
+
+
+
+    <!-- TEST -->
+    <section class="dark trans" id="portfolio">
+      <ul class="grid cs-style-3">
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "1", photo_id: "/assets/5/5.4.jpg" do%>
+            <% hidden_field_tag 'tags_list' %>
+              <%= image_tag('/assets/5/5.4.jpg') %>
+            <% end %>
+            <figcaption>
+              <h3>BANCA</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "Ir", controller: "pages", action: "portfolio", id: "1", photo_id: "/assets/5/5.4.jpg" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-4">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "15" do%>
+              <img src="/assets/LIBRERO/lib3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "15" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "2" do%>
+              <img src="/assets/7/7.1.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>BANCA</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "2" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "7" do%>
+              <img src="/assets/23.0/23.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "7" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "8" do%>
+              <img src="/assets/24.0/24.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "8" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "14" do%>
+              <img src="/assets/AUXILIARES/tv5.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "14" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "9" do%>
+              <img src="/assets/25.0/25.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "9" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "11" do%>
+              <img src="/assets/27.0/27.1.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "11" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "12" do%>
+              <img src="/assets/28.0/28.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "12" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "5" do%>
+              <img src="/assets/21/21.3.jpg" alt="img01" >
+            <%end%> 
+            <figcaption>
+              <h3>Librero</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST",  controller: "pages", action: "portfolio", id: "5" %>
+            </figcaption>
+          </figure>
+        </li>
+
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "4" do%>
+              <img src="/assets/20/20.1.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "4" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "10" do%>
+              <img src="/assets/26.0/26.2.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "10" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "3" do%>
+              <img src="/assets/9/9.3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>MUEBLE DE TV</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "3" %>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="grid cs-style-3">
+          <figure>
+            <%= link_to controller: "pages", action: "portfolio", id: "6" do%>
+              <img src="/assets/22.0/22.3.jpg" alt="img01">
+            <% end %>
+            <figcaption>
+              <h3>BANCA</h3>
+              <p>Precio $5,000</p>
+              <%= link_to "TEST", controller: "pages", action: "portfolio", id: "6" %>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+        
+    
     </section>
-    <section class='white trans' id='contact'>
-      <div class='centered large'>
-        <div class='row-fluid'>
-          <div class='col-md-4'>
-            <h2>
-              Contact
-            </h2>
-            <p class='small'>
-              Suspendisse ultricies elit id consectetur pharetra. Aenean accumsan venenatis massa id mollis. Donec quis pharetra lacus. Aenean bibendum, nunc eget mollis blandit.
-            </p>
-            <div class='social-icons'>
-              <a class='icon fa fa-twitter' href='#'></a>
-              <a class='icon fa fa-facebook' href='#'></a>
-              <a class='icon fa fa-dribbble' href='#'></a>
-              <a class='icon fa fa-instagram' href='#'></a>
-            </div>
-          </div>
-          <div class='col-md-8'>
-            <h3>
-              Get in touch
-            </h3>
-            <form action='php/email.php' id='form' name='form'>
-              <div class='form-group'>
-                <input class='form-control' id='name' name='name' placeholder='Name' type='text'>
-                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-              </div>
-              <div class='form-group'>
-                <input class='form-control' id='email' name='email' placeholder='E-mail' type='text'>
-                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-              </div>
-              <div class='form-group'>
-                <input class='form-control' id='phone' name='phone' placeholder='Phone' type='text'>
-              </div>
-              <div class='form-group'>
-                <textarea class='form-control' id='message' name='message' placeholder='Message'></textarea>
-                <span class='glyphicon glyphicon-remove form-control-feedback'></span>
-              </div>
-              <input class='form-control' id='send' type='submit' value='Send'>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
+    <!-- CONTACT -->
+    
+    <%= render 'contact' %>
