@@ -1,3 +1,5 @@
+  <% furniture =  description(params[:id])   %>
+
 
 <section class='text-center' id='home'>
   <!-- <img alt='Home' class='fs faded' src='http://placehold.it/1200x800'> -->
@@ -9,8 +11,7 @@
   </div>
 </section>
 
-
-
+      
 
 
 <!-- NAV BAR -->
@@ -26,11 +27,9 @@
         <h2>
           Everytime I touch a pencil, I write
         </h2>
-        <p> <%= description(params[:id])  %> </p>
          <%= image_tag("/assets/1/1.1.jpg") %>
          <%= image_tag("/assets/1/1.1.jpg") %>
          <%= image_tag("/assets/1/1.1.jpg") %>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo sed nisl placerat fermentum. Suspendisse egestas libero non condimentum dictum. Quisque vulputate turpis id massa tempus, id porttitor nisi pellentesque. Mauris laoreet erat non neque venenatis mattis.</p>
         <blockquote>
           This is an example blog quote
         </blockquote>
@@ -109,7 +108,7 @@
         <li><img src="/assets/1/1.2.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
         <li><img src="/assets/1/1.3.jpg" alt="Montréal, QC, Canada" data-large-src="/assets/1/1.3.jpg"></li>
         <!-- <li><img src="/assets/1/1.1.jpg"><span>Shanghai, China</span></li> -->
-        <li><a href="/" target="_blank"><img src="/assets/1/1.1.jpg"><span>New York, NY, USA</span></a></li>
+        <li><a href="/" target="_blank"><img src="/assets/1/1.1.jpg"><span>  <%= furniture[:name]  %></span></a></li>
       </ul>
     </div>
   </section>
