@@ -6,12 +6,21 @@
  *
  * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
  */
+
+.floatright {
+    float: right;
+} 
+
+.floatleft {
+    float: left;
+} 
+
 .pgwSlider {
     width: 100%;
     color: #fff;
 }
 
-.pgwSlider a{
+.pgwSlider a {
     display: block;
     text-decoration: none;
     color: #fff;

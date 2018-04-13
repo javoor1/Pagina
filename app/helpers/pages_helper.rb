@@ -18,7 +18,11 @@ module PagesHelper
 				material: "Material: Vidrio templado 10mm de grosor, Herrajes de acero inoxidable",
 				dimentions: "Ancho: 500 mm , Largo: 1,628 mm , Alto: 560 mm", 
 				description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-				category: "Bancas"
+				category: "Bancas",
+				images: {
+					hero: "/assets/5/5.1.jpg", 
+					all: ["/assets/5/5.1.jpg", "/assets/5/5.2.jpg", "/assets/5/5.13.jpg", "/assets/5/5.4.jpg", "/assets/5/5.5.jpg"]
+				}
 			}
 
 		when "2"

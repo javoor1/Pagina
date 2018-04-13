@@ -85,6 +85,7 @@ section .block { padding: 40px; }
 
 img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
 section#portfolioslider {max-width: 100%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
+div#test {max-width: 90%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
 
 
 img.faded { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)"; filter: alpha(opacity=0); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; background: #000; }
