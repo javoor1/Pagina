@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+  
+  helper :all #Por alguna razón el pages_helper.rb no se podía leer desde el portfolio.html.erb y tuvimos que incluir esto.
+
   protect_from_forgery with: :exception
 
 
