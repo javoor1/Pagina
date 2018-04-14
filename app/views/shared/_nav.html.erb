@@ -6,7 +6,7 @@
       </div>
       <ul>
 
-<!--         <li>
+        <!-- <li>
           <a class='home active' href='#home'>
             test
           </a>
@@ -23,6 +23,12 @@
         <li>
           <%= link_to "Muebles", {controller: "pages", action: "home", anchor: "portfolio"} %>
         </li>
+
+        <% unless current_page?(controller: "pages", action: "home") %>
+          <li id="liactive">
+            <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", anchor: "portfolioslider"}, class: "liactive" %>
+          </li>
+        <% end %>
 
         <li>
           <a href='#'>

@@ -74,14 +74,14 @@
 
         <li class="grid cs-style-3">
           <figure>
-            <%= link_to controller: "pages", action: "portfolio", id: "1",  photo_id: "/assets/5/5.4.jpg" do%>
+            <%= link_to controller: "pages", action: "portfolio", id: "1" do%>
             <% hidden_field_tag 'tags_list' %>
               <%= image_tag('/assets/5/5.4.jpg') %>
             <% end %>
             <figcaption>
               <h3>BANCA</h3>
               <p>Precio $5,000</p>
-              <%= link_to "Ir", controller: "pages", action: "portfolio", id: "1", photo_id: "/assets/5/5.4.jpg" %>
+              <%= link_to "Ir", controller: "pages", action: "portfolio", id: "1" %>
             </figcaption>
           </figure>
         </li>
