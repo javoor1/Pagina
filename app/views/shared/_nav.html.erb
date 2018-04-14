@@ -6,7 +6,7 @@
       </div>
       <ul>
 
-        <!-- <li>
+      <!-- <li>
           <a class='home active' href='#home'>
             test
           </a>
@@ -24,10 +24,17 @@
           <%= link_to "Muebles", {controller: "pages", action: "home", anchor: "portfolio"} %>
         </li>
 
-        
-        <li>
-          <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", anchor: "portfolioslider"} %>
-        </li>
+        <% if params[:id] != nil %>
+          <% if mobile_device? %>
+            <li>
+              <%= link_to "TEST", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfoliomobile"} %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "TEST", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfolioslider"} %>
+            </li>
+          <% end %>
+        <% end %>
 
         <li>
           <a href='#'>
