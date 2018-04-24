@@ -3,42 +3,61 @@
         <div class='row-fluid'>
           <div class='col-md-4'>
             <h2>
-              Contact
+              Contacto
             </h2>
             <p class='small'>
-              Suspendisse ultricies elit id consectetur pharetra. Aenean accumsan venenatis massa id mollis. Donec quis pharetra lacus. Aenean bibendum, nunc eget mollis blandit.
+              Teléfono: (044-55) 49-64-87-59<br>
+              <br>E-mail: glasmuebles@gmail.com<br>
             </p>
+
+            <p class='small'>
+              <br>Da click y visítanos en nuestras redes sociales:
+            </p>
+
             <div class='social-icons'>
               <!-- <a class='icon fa fa-twitter' href='#'></a> -->
-              <a class='icon fa fa-facebook' href='https://www.facebook.com/GLAS-Muebles-Estudio-2165047197107220' target="blank"></a>
+              <!-- <a class='icon fa fa-facebook' href='https://www.facebook.com/GLAS-Muebles-Estudio-2165047197107220/' target="blank"></a> -->
+              <%= link_to "", "https://www.facebook.com/glasmuebles/", :target => "_blank", class: "icon fa fa-facebook" %>
+
+              <%= link_to "", "https://www.instagram.com/glasmuebles/", :target => "_blank", class: "icon fa fa-instagram" %>
               <!-- <a class='icon fa fa-dribbble' href='#'></a> -->
-              <a class='icon fa fa-instagram' href='https://www.instagram.com/glasmuebles/' target="blank"></a>
+              <!-- <a class='icon fa fa-instagram' href='https://www.instagram.com/glasmuebles/' target="blank"></a> -->
             </div>
           </div>
-          <div class='col-md-8'>
+
+          <div class='col-md-8' id="float-left-contact">
             <h3>
-              Get in touch
+              Mándanos un correo con todas tus preguntas.<br>
             </h3>
-             <form action='https://formspree.io/javoor1@hotmail.com' id='form' name='form' method="POST" target="_blank">
+             <form action='https://formspree.io/glasmuebles@gmail.com' id='form' name='form' method="POST" target="_blank">
 
               <div class='form-group'>
-                <input class='form-control' id='name' name='name' placeholder='Name' type='text'>
+                <input class='form-control' id='name' name='name' placeholder='Nombre/Compañía' type='text'>
                 <span class='glyphicon glyphicon-remove form-control-feedback'></span>
               </div>
+              
               <div class='form-group'>
                 <input class='form-control' id='email' name='email' placeholder='E-mail' type='text'>
                 <span class='glyphicon glyphicon-remove form-control-feedback'></span>
               </div>
               <div class='form-group'>
-                <input class='form-control' id='phone' name='phone' placeholder='Phone' type='text'>
+                <input class='form-control' id='phone' name='phone' placeholder='Teléfono' type='text'>
               </div>
+              
               <div class='form-group'>
-                <textarea class='form-control' id='message' name='message' placeholder='Message'></textarea>
+                <textarea class='form-control' id='message' name='message' placeholder='Mensaje'></textarea>
                 <span class='glyphicon glyphicon-remove form-control-feedback'></span>
               </div>
-              <input class='form-control' id='send' type='submit' value='Send'>
+              <input class='form-control' id='send' type='submit' value='Enviar'>
             </form>
           </div>
         </div>
+        <div class='col-md-8' id="formspreediv">
+          <p class='small' id="formspree">
+            <br> Al dar click se te reenviará a formspree, no te preocupes, 
+            <br>es para verificar que no eres un robot. <br>
+            <br>Al acabar, formspree te reenviará de nuevo a Glas muebles.
+          </p>
+        </div> 
       </div>
 </section>

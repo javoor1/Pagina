@@ -14,8 +14,9 @@ h1, h2 { font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; ma
 
 h1, h2, h3, h4, h5, h6 { color: #000; }
 
-p { font-size: 1.35em; color: #888; }
-p.small { font-size: 1em; }
+p { font-size: 1.35em; color: #d0d1d5; }
+p.small { font-size: 1em; color: #888;}
+p.small#formspree {font-size: 1em; color: #454141;}
 
 a { outline: none !important; }
 
@@ -23,6 +24,9 @@ a { outline: none !important; }
   color: white; 
 }
 
+
+
+#formspreediv {float: right;}
 
 /* 
 	Modes
@@ -136,8 +140,10 @@ nav#main .logo {  font-size: 25px;  height: 80px; line-height: 80px; padding: 0 
 nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
 nav#main ul li { height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-nav#main ul li a { height: 80px; display: inline-block; padding: 0 40px; font-size: 16px; line-height: 80px; color: #16a085; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
-@media screen and (max-width: 620px) { nav#main ul li a { padding: 0 12px; } }
+nav#main ul li a { height: 80px; display: inline-block; padding: 0 30px; font-size: 16px; line-height: 80px; color: #16a085; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+@media screen and (max-width: 620px) { nav#main ul li a { padding: 0 0px; } }
+
 nav#main ul li a:hover { text-decoration: none; background: #16a085; color: white; }
 nav#main ul li a.active { background: #222; color: #fff; }
 

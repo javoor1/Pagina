@@ -27,16 +27,16 @@
         <% if params[:id] != nil %>
           <% if mobile_device? %>
             <li>
-              <%= link_to "TEST", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfoliomobile"} %>
+              <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfoliomobile"} %>
             </li>
           <% else %>
             <li>
-              <%= link_to "TEST", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfolioslider"} %>
+              <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfolioslider"} %>
             </li>
           <% end %>
         <% end %>
 
-        <li>
+       <!--  <li>
           <a href='#'>
             Blog
           </a>
@@ -48,7 +48,7 @@
               <a href='single.html'>Blog - single</a>
             </li>
           </ul>
-        </li>
+        </li> -->
         
         <li>
          <%= link_to "Contacto", anchor: "contact" %>
