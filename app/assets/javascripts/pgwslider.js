@@ -1,4 +1,4 @@
-/**
+/*
  * PgwSlider - Version 2.3
  *
  * Copyright 2014, Jonathan M. Piat

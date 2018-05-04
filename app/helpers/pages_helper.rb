@@ -16,19 +16,23 @@ module PagesHelper
 			puts "Dentro de pages_helper mobile_device"
 			case id 
 			when "1"
-				@furniture = {name: "Banca Valeria", 
+				@furniture = {
+					name: "Banca Valeria", 
 					material: "Material: Vidrio templado 10mm de grosor, Herrajes de acero inoxidable",
 					dimentions: "Ancho: 500 mm , Largo: 1,628 mm , Alto: 560 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 					category: "Bancas",
 					images: {
 						hero: "/assets/5/5.4.jpg", 
+						price: "5,000 mxn",
 						all: ["/assets/5/5.1.jpg", "/assets/5/5.2.jpg", "/assets/5/5.13.jpg", "/assets/5/5.4.jpg", "/assets/5/5.5.jpg"]
-					}
+					},
+					price: "5,000 mxn"
 				}
 
 			when "2"
-				@furniture = {name: "Venegas", 
+				@furniture = {
+					name: "Venegas", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 400 mm , Largo: 420 mm , Alto: 1,900 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -40,7 +44,8 @@ module PagesHelper
 				}
 
 			when "3"
-				@furniture = {name: "Mesa Castro", 
+				@furniture = {
+					name: "Mesa Castro", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,100 mm , Largo: 1,100 mm , Alto: 360 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -52,7 +57,8 @@ module PagesHelper
 				}
 
 			when "4"
-				@furniture = {name: "Cortés", 
+				@furniture = {
+					name: "Cortés", 
 					material: "Vidrio templado,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 700 mm , Largo: 1,100 mm , Alto: 420 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -64,7 +70,8 @@ module PagesHelper
 				}
 
 	 		when "5"
-		 		@furniture = {name: "Cielo", 
+		 		@furniture = {
+		 			name: "Cielo", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 900 mm , Alto: 360 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -76,7 +83,8 @@ module PagesHelper
 				}
 
 			when "6"
-				@furniture = {name: "Verón", 
+				@furniture = {
+					name: "Verón", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 500 mm , Largo: 1,628 mm , Alto: 560 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -88,7 +96,8 @@ module PagesHelper
 				}
 
 			when "7"
-				@furniture = {name: "Lorca", 
+				@furniture = {
+					name: "Lorca", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm, Largo: 1,800, Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -100,7 +109,8 @@ module PagesHelper
 				}
 
 			when "8"
-				@furniture = {name: "Albert", 
+				@furniture = {
+					name: "Albert", 
 					material: "Vidrio templado",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -112,7 +122,8 @@ module PagesHelper
 				}
 
 			when "9" 
-				@furniture = {name: "Helena", 
+				@furniture = {
+					name: "Helena", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,210 mm ,  Largo: 600 mm , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -124,7 +135,8 @@ module PagesHelper
 				}
 
 			when "10"
-				@furniture = {name: "Krafft", 
+				@furniture = {
+					name: "Krafft", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,210 mm ,  Largo: 600 mm , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -136,7 +148,8 @@ module PagesHelper
 				}
 
 			when "11"
-				@furniture = {name: "Barragán", 
+				@furniture = {
+					name: "Barragán", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,300 mm, Largo: 700 mm, Alto: 800 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -148,7 +161,8 @@ module PagesHelper
 				}
 
 			when "12"
-				@furniture = {name: "Marino" , 
+				@furniture = {
+					name: "Marino" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -160,7 +174,8 @@ module PagesHelper
 				}
 
 			when "13"
-				@furniture = {name: "María" , 
+				@furniture = {
+					name: "María" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -172,7 +187,8 @@ module PagesHelper
 				}
 
 			when "14"	
-				@furniture = {name: "Leonardo" , 
+				@furniture = {
+					name: "Leonardo" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 750 mm , Largo: 1,400 , Alto: 760 mm" ,
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -187,7 +203,8 @@ module PagesHelper
 		else
 			case id 
 			when "1"
-				@furniture = {name: "Banca Valeria", 
+				@furniture = {
+					name: "Banca Valeria", 
 					material: "Material: Vidrio templado 10mm de grosor, Herrajes de acero inoxidable",
 					dimentions: "Ancho: 500 mm , Largo: 1,628 mm , Alto: 560 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -199,7 +216,8 @@ module PagesHelper
 				}
 
 			when "2"
-				@furniture = {name: "Venegas", 
+				@furniture = {
+					name: "Venegas", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 400 mm , Largo: 420 mm , Alto: 1,900 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -211,7 +229,8 @@ module PagesHelper
 				}
 
 			when "3"
-				@furniture = {name: "Mesa Castro", 
+				@furniture = {
+					name: "Mesa Castro", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,100 mm , Largo: 1,100 mm , Alto: 360 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -223,7 +242,8 @@ module PagesHelper
 				}
 
 			when "4"
-				@furniture = {name: "Cortés", 
+				@furniture = {
+					name: "Cortés", 
 					material: "Vidrio templado,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 700 mm , Largo: 1,100 mm , Alto: 420 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -235,7 +255,8 @@ module PagesHelper
 				}
 
 	 		when "5"
-		 		@furniture = {name: "Cielo", 
+		 		@furniture = {
+		 			name: "Cielo", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 900 mm , Alto: 360 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -247,7 +268,8 @@ module PagesHelper
 				}
 
 			when "6"
-				@furniture = {name: "Verón", 
+				@furniture = {
+					name: "Verón", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 500 mm , Largo: 1,628 mm , Alto: 560 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -259,7 +281,8 @@ module PagesHelper
 				}
 
 			when "7"
-				@furniture = {name: "Lorca", 
+				@furniture = {
+					name: "Lorca", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm, Largo: 1,800, Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -271,7 +294,8 @@ module PagesHelper
 				}
 
 			when "8"
-				@furniture = {name: "Albert", 
+				@furniture = {
+					name: "Albert", 
 					material: "Vidrio templado",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -283,7 +307,8 @@ module PagesHelper
 				}
 
 			when "9" 
-				@furniture = {name: "Helena", 
+				@furniture = {
+					name: "Helena", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,210 mm ,  Largo: 600 mm , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -295,7 +320,8 @@ module PagesHelper
 				}
 
 			when "10"
-				@furniture = {name: "Krafft", 
+				@furniture = {
+					name: "Krafft", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,210 mm ,  Largo: 600 mm , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -307,7 +333,8 @@ module PagesHelper
 				}
 
 			when "11"
-				@furniture = {name: "Barragán", 
+				@furniture = {
+					name: "Barragán", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 1,300 mm, Largo: 700 mm, Alto: 800 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -319,7 +346,8 @@ module PagesHelper
 				}
 
 			when "12"
-				@furniture = {name: "Marino" , 
+				@furniture = {
+					name: "Marino" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
@@ -331,7 +359,8 @@ module PagesHelper
 				}
 
 			when "13"
-				@furniture = {name: "María" , 
+				@furniture = {
+					name: "María" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 900 mm , Largo: 1,800 , Alto: 760 mm", 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -343,7 +372,8 @@ module PagesHelper
 				}
 
 			when "14"	
-				@furniture = {name: "Leonardo" , 
+				@furniture = {
+					name: "Leonardo" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: "Ancho: 750 mm , Largo: 1,400 , Alto: 760 mm" ,
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

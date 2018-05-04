@@ -1,0 +1,281 @@
+<% furniture =  description(params[:id]) %>
+<% images = furniture[:images][:all] %>
+
+<% if mobile_device? %>
+  <%= render 'shared/nav' %>
+  <section id="portfoliomobile" class='dark'>
+    <div class='large'>
+      <div class='row'>
+        <div class='col-md-7 content'>
+          <h4>24th December, 2014</h4>
+          <h2>
+            Everytime I touch a pencil, I write
+          </h2>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+          <blockquote>
+            This is an example blog quote
+          </blockquote>
+          <!-- <p>
+            <br>
+            <a class='btn btn-default btn-lg' href='#'>Example button</a>
+            <a class='btn btn-default btn-md' href='#'>Example button</a>
+            <a class='btn btn-default btn-xs' href='#'>Example button</a>
+          </p>
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6> -->
+        </div>
+        <div class='col-md-4 col-md-offset-1'>
+          <form id='searchform'>
+            <label>Search:</label>
+            <input id='s' type='text'>
+            <input type='submit' value='Search'>
+          </form>
+          <h3>Recent posts</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>Sounds of Amsterdam</a>
+            </li>
+            <li>
+              <a href='#'>What's new in 2.0?</a>
+            </li>
+            <li>
+              <a href='#'>Bug fixes</a>
+            </li>
+            <li>
+              <a href='#'>Do you like it?</a>
+            </li>
+            <li>
+              <a href='#'>A Wordpress version is coming!</a>
+            </li>
+          </ul>
+          <h3>Archives</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>November 2014</a>
+            </li>
+            <li>
+              <a href='#'>October 2014</a>
+            </li>
+            <li>
+              <a href='#'>September 2014</a>
+            </li>
+          </ul>
+          <h3>Meta</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>Login</a>
+            </li>
+            <li>
+              <a href='#'>Entries RSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<% else %>  
+  <section class='text-center' id='portfoliohome'>
+    <!-- <img alt='Home' class='fs faded' src='http://placehold.it/1200x800'> -->
+      <%= image_tag(furniture[:images][:hero], class: "fs faded") %>
+      <%= render 'shared/nav' %>
+  </section>
+
+  <%= render 'shared/nav' %>
+
+  <section id="portfolioslider" class='dark'>
+    <div class="sliderwrapper">
+      <div class="floatleft">
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $('.pgwSlider').pgwSlider();
+          });
+        </script>
+        <ul class="pgwSlider">
+          <li><img src= <%= images[4] %> alt="<%= furniture[:name] %>" data-description="SOMETHING HERE"></li>
+          
+          <li><img src= <%= images[0] %> alt="" data-large-src= <%= images[0] %> data-description="SOMETHING HERE"> </li>
+          <!-- <li><img src="/assets/1/1.1.jpg"><span>Shanghai, China</span></li> -->
+          <li><a href="/" target="_blank"><img src= <%= images[3] %>></a></li>
+        </ul>
+      </div>
+      <div class="floatright">
+        <p>
+          <%= furniture[:name] %> <br>
+          <br> <%= furniture[:description] %> <br>
+          <br> Medidas:<br>
+          <%= furniture[:dimentions] %> <br>
+          <br> Precio: <br>
+          <%= furniture[:price] %>
+        </p>
+      </div> 
+      <p>
+          <%= furniture[:name] %> <br>
+          <br> <%= furniture[:description] %> <br>
+          <br> Medidas:<br>
+          <%= furniture[:dimentions] %> <br>
+          <br> Precio: <br>
+          <%= furniture[:price] %>
+        </p>
+    </div>   
+  </section>
+<% end %>
+
+<!-- CONTACT -->
+<%= render 'contact' %>
+
+
+
+
+
+
+
+<!-- ORIGINAL -->
+<% furniture =  description(params[:id]) %>
+<% images = furniture[:images][:all] %>
+
+<section class='text-center' id='portfoliohome'>
+  <!-- <img alt='Home' class='fs faded' src='http://placehold.it/1200x800'> -->
+  <%= image_tag(furniture[:images][:hero], class: "fs faded") %>
+  <div class='centered scrollFade medium'>
+    <h1>
+      <% furniture[:images] %>
+
+    </h1>
+  </div>
+</section>
+      
+
+
+<!-- NAV BAR -->
+<%= render 'shared/nav' %>
+
+<% if mobile_device? %>
+
+  <section id="portfoliomobile" class='dark'>
+    <div class='large'>
+      <div class='row'>
+        <div class='col-md-7 content'>
+          <h4>24th December, 2014</h4>
+          <h2>
+            Everytime I touch a pencil, I write
+          </h2>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+           <%= image_tag("/assets/1/1.1.jpg") %>
+          <blockquote>
+            This is an example blog quote
+          </blockquote>
+          <!-- <p>
+            <br>
+            <a class='btn btn-default btn-lg' href='#'>Example button</a>
+            <a class='btn btn-default btn-md' href='#'>Example button</a>
+            <a class='btn btn-default btn-xs' href='#'>Example button</a>
+          </p>
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6> -->
+        </div>
+        <div class='col-md-4 col-md-offset-1'>
+          <form id='searchform'>
+            <label>Search:</label>
+            <input id='s' type='text'>
+            <input type='submit' value='Search'>
+          </form>
+          <h3>Recent posts</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>Sounds of Amsterdam</a>
+            </li>
+            <li>
+              <a href='#'>What's new in 2.0?</a>
+            </li>
+            <li>
+              <a href='#'>Bug fixes</a>
+            </li>
+            <li>
+              <a href='#'>Do you like it?</a>
+            </li>
+            <li>
+              <a href='#'>A Wordpress version is coming!</a>
+            </li>
+          </ul>
+          <h3>Archives</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>November 2014</a>
+            </li>
+            <li>
+              <a href='#'>October 2014</a>
+            </li>
+            <li>
+              <a href='#'>September 2014</a>
+            </li>
+          </ul>
+          <h3>Meta</h3>
+          <ul class='list'>
+            <li>
+              <a href='#'>Login</a>
+            </li>
+            <li>
+              <a href='#'>Entries RSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<% else %>
+  <section id="portfolioslider" class='dark'>
+    <div class="sliderwrapper">
+      <div class="floatleft">
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $('.pgwSlider').pgwSlider();
+          });
+        </script>
+        <ul class="pgwSlider">
+          <li><img src= <%= images[4] %> alt="<%= furniture[:name] %>" data-description="SOMETHING HERE"></li>
+          
+          <li><img src= <%= images[0] %> alt="" data-large-src= <%= images[0] %> data-description="SOMETHING HERE"> </li>
+          <!-- <li><img src="/assets/1/1.1.jpg"><span>Shanghai, China</span></li> -->
+          <li><a href="/" target="_blank"><img src= <%= images[3] %>></a></li>
+        </ul>
+      </div>
+      <div class="floatright">
+        <p>
+          <%= furniture[:name] %> <br>
+          <br> <%= furniture[:description] %> <br>
+          <br> Medidas:<br>
+          <%= furniture[:dimentions] %> <br>
+          <br> Precio: <br>
+          <%= furniture[:price] %>
+        </p>
+      </div> 
+      <p>
+          <%= furniture[:name] %> <br>
+          <br> <%= furniture[:description] %> <br>
+          <br> Medidas:<br>
+          <%= furniture[:dimentions] %> <br>
+          <br> Precio: <br>
+          <%= furniture[:price] %>
+        </p>
+    </div>   
+  </section>
+<% end %>
+
+
+
+<!-- CONTACT -->
+
+<%= render 'contact' %>
