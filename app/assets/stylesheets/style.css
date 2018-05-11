@@ -4,6 +4,7 @@
 html, body { height: 100% !important; min-height: 100%; background: #ccc; font-size: 16px; }
 @media screen and (max-width: 620px) { html, body { font-size: 13px; } }
 
+
 /* 
 	Typography
 */
@@ -133,9 +134,69 @@ blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: 
 /*
 	Navigation
 */
-/*nav.mainmobile { position: absolute; top: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }*/
 
-nav#main { position: absolute; top: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+/* 
+  Mobile
+*/
+@media all and (max-width: 430px) and (min-width: 360px) {
+  nav#main { z-index: 1; position: absolute; top: 0; left: 0; right: 0; height: 80px; background: #000; border-top: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+  @media screen and (max-width: 620px) { nav#main:after { display: block; } }
+  nav#main .logo {  font-size: 25px;  height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: white; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+  @media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
+  nav#main ul { list-style: none; height: 80px; padding: 0; margin: 0; text-align: center; font-size: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+  @media screen and (max-width: 620px) { nav#main ul { text-align: right; } }
+  nav#main ul li { background-color: black !important; height: 80px; display: inline-block; border-left: 1px solid #222; position: relative; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+  nav#main ul li a { height: 80px; display: inline-block; padding: 0 30px; font-size: 16px; line-height: 80px; color: #16a085; font-family: "Oswald", Arial, sans-serif; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+  @media screen and (max-width: 620px) { nav#main ul li a { padding: 0 0px; } }
+  nav#main ul li a:hover { text-decoration: none; background: #16a085; color: white; }
+  nav#main ul li a.active { background: #222; color: #fff; }
+  nav#main ul li a.liactive { background: #222; color: white; }
+  nav#main ul li ul.dropdown { position: absolute; display: none; bottom: 81px; right: 0; background: #fff; }
+  nav#main ul li ul.dropdown li { display: block; width: 200px; height: 40px; border: 0; border-top: 1px solid #ccc; }
+  nav#main ul li ul.dropdown li a { line-height: 40px; height: 40px; padding: 0; color: #888; display: block; }
+  nav#main ul li ul.dropdown li:hover { border-bottom: 1px solid #ccc; }
+  nav#main ul li ul.dropdown li:hover a { background: #ededed; color: #000; }
+  nav#main ul li:last-child { border-right: 1px solid #222; }
+  nav#main ul li:hover ul.dropdown { display: block; }
+  @media screen and (max-width: 620px) { nav#main ul { position: absolute; width: 100%; top: -2px; }
+
+    nav#main ul:after { font-family: 'fontAwesome'; content: '\f0c9'; height: 79px; font-size: 21px; width: 80px; display: block; line-height: 80px; border-left: 1px solid #16a085; border-bottom: 1px solid #16a085; float: right; text-align: center; background: #16a085; }
+    
+    nav#main ul li { display: none; min-height: 30px; height: auto; line-height: 30px; position: relative; }
+    nav#main ul li ul.dropdown { display: block; position: relative; text-align: center; width: 100%; top: auto; left: auto; right: auto; bottom: auto; }
+    nav#main ul li ul.dropdown li { width: 100%; background: #222; border-color: #222 !important; }
+    nav#main ul li ul.dropdown li a { width: 100%; }
+    nav#main ul li ul.dropdown:after { display: none; }
+    nav#main ul.hover { height: auto; background: #000; }
+    nav#main ul.hover:after { width: 100%; float: none; margin: 0 auto; content: '\f00d'; }
+    nav#main ul.hover li { display: block; float: none; width: 100%; position: relative; text-align: center; line-height: 50px; border-bottom: 0 !important; border-top: 0 !important; }
+    nav#main ul.hover li:hover { line-height: 50px; }
+    nav#main ul.hover li:hover ul.dropdown { position: relative; display: block; width: 100%; border: 0; }
+    nav#main ul.hover li:hover ul.dropdown li { width: 100%; line-height: 50px; }
+    nav#main ul.hover li:hover ul.dropdown li a { width: 100%; }
+    nav#main ul.hover li:hover ul.dropdown li:hover { line-height: 50px; }
+    nav#main ul.hover li a { display: block; width: 100%; height: 50px; line-height: 50px; } }
+  nav#main.affix { position: fixed; z-index: 9999; top: 0; bottom: auto; height: 40px; border-bottom: 0px solid #222; }
+  nav#main.affix .logo { height: 480px; line-height: 40px; padding: 0 10px; color: white;}
+  nav#main.affix ul { height: 40px; }
+  nav#main.affix ul li { height: 40px; }
+  nav#main.affix ul li a { height: 40px; line-height: 40px; }
+  nav#main.affix ul ul.dropdown { bottom: auto; top: 40px; }
+  @media screen and (max-width: 620px) { nav#main.affix ul ul.dropdown { top: auto; bottom: auto; } }
+  nav#main.affix ul ul.dropdown li { background: #fff; }
+  @media screen and (max-width: 620px) { nav#main.affix ul:after { height: 39px; line-height: 40px; }
+    nav#main.affix ul li { background: #000; height: auto; min-height: 40px; }
+    nav#main.affix ul li ul.dropdown { height: auto; } }
+}
+/* 
+  NAV Mobile
+*/
+
+
+/* 
+  NAV Web
+*/
+nav#main { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: #000; border-bottom: 1px solid #222; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main:after { display: block; } }
 nav#main .logo {  font-size: 25px;  height: 80px; line-height: 80px; padding: 0 40px; position: absolute; left: 0; color: white; font-family: "Oswald", Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 @media screen and (max-width: 620px) { nav#main .logo { padding: 0 12px; } }
@@ -187,6 +248,9 @@ nav#main.affix ul ul.dropdown li { background: #fff; }
 @media screen and (max-width: 620px) { nav#main.affix ul:after { height: 39px; line-height: 40px; }
   nav#main.affix ul li { background: #000; height: auto; min-height: 40px; }
   nav#main.affix ul li ul.dropdown { height: auto; } }
+/* 
+  NAV Web
+*/
 
 .social-icons { margin: 20px 0; }
 
