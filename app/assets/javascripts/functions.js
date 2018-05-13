@@ -1,5 +1,6 @@
-$(function(){
-	console.log("Dentro de functions.js");
+$( document ).on('turbolinks:load', function() {
+
+	
 
 	$('a').click(function(e){
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -150,3 +151,7 @@ $(function(){
 	});
 
 });
+
+
+
+
