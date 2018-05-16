@@ -26,7 +26,7 @@ module PagesHelper
 						hero: "/assets/5.0/5.1.jpg", 
 						all: ["/assets/5.0/5.1.jpg", "/assets/5.0/5.2.jpg", "/assets/5.0/5.3.jpg", "/assets/5.0/5.4.jpg", "/assets/5.0/5.5.jpg"]
 					},
-					price: "$4,080 mxn"
+					price: "$4,100 mxn"
 				}
 
 			when "2"
@@ -41,7 +41,7 @@ module PagesHelper
 						hero: "/assets/LIBRERO/lib1.jpg",
 						all: ["/assets/LIBRERO/lib1.jpg", "/assets/LIBRERO/lib2.jpg", "/assets/LIBRERO/lib3.jpg", "/assets/LIBRERO/lib4.jpg", "/assets/LIBRERO/lib1.jpg"]
 					},
-					price: "$5,000 mxn"
+					price: "$9,000 mxn"
 				}
 
 			when "3"
@@ -71,7 +71,7 @@ module PagesHelper
 						hero: "/assets/23.0/23.8.jpg", 
 						all: ["/assets/23.0/23.1.jpg", "/assets/23.0/23.2.jpg", "/assets/23.0/23.3.jpg"]
 					},
-					price: "$3,850 mxn"
+					price: "$3,700 mxn"
 				}
 
 	 		when "5"
@@ -86,7 +86,7 @@ module PagesHelper
 						hero: "/assets/24.0/24.8.jpg", 
 						all: ["/assets/24.0/24.1.jpg", "/assets/24.0/24.2.jpg", "/assets/24.0/24.3.jpg"]
 					},
-					price: "$3,810 mxn"
+					price: "$3,700 mxn"
 				}
 
 			when "6"
@@ -101,7 +101,7 @@ module PagesHelper
 						hero: "/assets/AUXILIARES/MTV1.jpg", 
 						all: ["/assets/AUXILIARES/MTV1.jpg", "/assets/AUXILIARES/MTV2.jpg", "/assets/AUXILIARES/MTV3.jpg", "/assets/AUXILIARES/MTV4.jpg", "/assets/AUXILIARES/MTV5.jpg"]
 					},
-					price: "$5,900 mxn"
+					price: "$6,900 mxn"
 				}
 
 			when "7"
@@ -131,7 +131,7 @@ module PagesHelper
 						hero: "/assets/27.0/27.8.jpg", 
 						all: ["/assets/27.0/27.1.jpg", "/assets/27.0/27.2.jpg", "/assets/27.0/27.3.jpg"]
 					},
-					price: "$9,100 mxn"
+					price: "$6,900 mxn"
 				}
 
 			when "9" 
@@ -161,7 +161,7 @@ module PagesHelper
 						hero: "/assets/21.0/21.8.jpg", 
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
-					price: "$6,900 mxn"
+					price: "$6,200 mxn"
 				}
 
 			when "11"
@@ -176,7 +176,7 @@ module PagesHelper
 						hero: "/assets/20.0/20.8.jpg", 
 						all: ["/assets/20.0/20.1.jpg", "/assets/20.0/20.2.jpg", "/assets/20.0/20.1.jpg"]
 					},
-					price: "$7,500 mxn"
+					price: "$6,700 mxn"
 				}
 
 			when "12"
@@ -191,7 +191,7 @@ module PagesHelper
 						hero: "/assets/26.0/26.8.jpg", 
 						all: ["/assets/26.0/26.1.jpg", "/assets/26.0/26.2.jpg", "/assets/26.0/26.3.jpg"]
 					},
-					price: "$8,600 mxn"
+					price: "$8,500 mxn"
 				}
 
 			when "13"
@@ -221,7 +221,7 @@ module PagesHelper
 						hero: "/assets/22.0/22.8.jpg", 
 						all: ["/assets/22.0/22.1.jpg", "/assets/22.0/22.2.jpg", "/assets/22.0/22.3.jpg"]
 					},
-					price: "$7,200 mxn"
+					price: "$6,200 mxn"
 				}
 
 			when "15"	
@@ -236,7 +236,7 @@ module PagesHelper
 						hero: "/assets/21.0/21.1.jpg", 
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
-					price: "$6,900 mxn"
+					price: "$6,200 mxn"
 				}
 			end
 
@@ -247,14 +247,14 @@ module PagesHelper
 					id: 5,
 					name: "Banca Valeria", 
 					material: "Material: Vidrio templado 10mm de grosor, Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 500 mm", largo: "Largo: 1,628 mm" , alto: "Alto: 560 mm"}, 
+					dimentions: {ancho: "Ancho: 500 mm", largo: "Largo: 1,628 mm", alto: "Alto: 560 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 					category: "Bancas",
 					images: {
 						hero: "/assets/5.0/5.1.jpg", 
 						all: ["/assets/5.0/5.1.jpg", "/assets/5.0/5.2.jpg", "/assets/5.0/5.3.jpg", "/assets/5.0/5.4.jpg", "/assets/5.0/5.5.jpg"]
 					},
-					price: "$4,080 mxn"
+					price: "$4,100 mxn"
 				}
 
 			when "2"
@@ -262,14 +262,14 @@ module PagesHelper
 					id: "librero",
 					name: "Librero Venegas", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 400 mm", largo: "Largo: 420 mm", alto: "Alto: 1,900 mm"}, 
+					dimentions: {ancho: "Ancho: 400 mm" , largo: "Largo: 420 mm" , alto: "Alto: 1,900 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Libreros",
 					images: {
 						hero: "/assets/LIBRERO/lib1.jpg",
 						all: ["/assets/LIBRERO/lib1.jpg", "/assets/LIBRERO/lib2.jpg", "/assets/LIBRERO/lib3.jpg", "/assets/LIBRERO/lib4.jpg", "/assets/LIBRERO/lib1.jpg"]
 					},
-					price: "$5,000 mxn"
+					price: "$9,000 mxn"
 				}
 
 			when "3"
@@ -292,14 +292,14 @@ module PagesHelper
 					id: 23, 
 					name: "Mesa de centro Cortés", 
 					material: "Vidrio templado,  10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 700 mm", largo: "Largo: 1,100 mm", alto: "Alto: 420 mm"}, 
+					dimentions: {ancho: "Ancho: 700 mm" , largo: "Largo: 1,100 mm" , alto: "Alto: 420 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Mesas de Centro",
 					images: {
 						hero: "/assets/23.0/23.8.jpg", 
 						all: ["/assets/23.0/23.1.jpg", "/assets/23.0/23.2.jpg", "/assets/23.0/23.3.jpg"]
 					},
-					price: "$3,850 mxn"
+					price: "$3,700 mxn"
 				}
 
 	 		when "5"
@@ -314,7 +314,7 @@ module PagesHelper
 						hero: "/assets/24.0/24.8.jpg", 
 						all: ["/assets/24.0/24.1.jpg", "/assets/24.0/24.2.jpg", "/assets/24.0/24.3.jpg"]
 					},
-					price: "$3,810 mxn"
+					price: "$3,700 mxn"
 				}
 
 			when "6"
@@ -322,14 +322,14 @@ module PagesHelper
 					id: "MTV",
 					name: "Mueble de TV Verón", 
 					material: "Vidrio templado ,  10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 500 mm", largo: "Largo: 1,628 mm", alto: "Alto: 560 mm"}, 
+					dimentions: {ancho: "Ancho: 500 mm" , largo: "Largo: 1,628 mm", alto: "Alto: 560 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Mesas Auxiliares",
 					images: {
 						hero: "/assets/AUXILIARES/MTV1.jpg", 
 						all: ["/assets/AUXILIARES/MTV1.jpg", "/assets/AUXILIARES/MTV2.jpg", "/assets/AUXILIARES/MTV3.jpg", "/assets/AUXILIARES/MTV4.jpg", "/assets/AUXILIARES/MTV5.jpg"]
 					},
-					price: "$5,900 mxn"
+					price: "$6,900 mxn"
 				}
 
 			when "7"
@@ -352,14 +352,14 @@ module PagesHelper
 					id: 27,
 					name: "Escritorio Albert", 
 					material: "Vidrio templado",
-					dimentions: {ancho: "Ancho: 900 mm" , largo: "Largo: 1,800" , alto: "Alto: 760 mm"}, 
+					dimentions: {ancho: "Ancho: 900 mm", largo: "Largo: 1,800" , alto: "Alto: 760 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Escritorios",
 					images: {
 						hero: "/assets/27.0/27.8.jpg", 
 						all: ["/assets/27.0/27.1.jpg", "/assets/27.0/27.2.jpg", "/assets/27.0/27.3.jpg"]
 					},
-					price: "$9,100 mxn"
+					price: "$6,900 mxn"
 				}
 
 			when "9" 
@@ -367,7 +367,7 @@ module PagesHelper
 					id: 28,
 					name: "Escritorio Helena", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 1,210 mm" ,  largo: "Largo: 600 mm" , alto: "Alto: 760 mm"}, 
+					dimentions: {ancho: "Ancho: 1,210 mm",  largo: "Largo: 600 mm", alto: "Alto: 760 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Escritorios",
 					images: {
@@ -389,7 +389,7 @@ module PagesHelper
 						hero: "/assets/21.0/21.8.jpg", 
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
-					price: "$6,900 mxn"
+					price: "$6,200 mxn"
 				}
 
 			when "11"
@@ -404,7 +404,7 @@ module PagesHelper
 						hero: "/assets/20.0/20.8.jpg", 
 						all: ["/assets/20.0/20.1.jpg", "/assets/20.0/20.2.jpg", "/assets/20.0/20.1.jpg"]
 					},
-					price: "$7,500 mxn"
+					price: "$6,700 mxn"
 				}
 
 			when "12"
@@ -419,7 +419,7 @@ module PagesHelper
 						hero: "/assets/26.0/26.8.jpg", 
 						all: ["/assets/26.0/26.1.jpg", "/assets/26.0/26.2.jpg", "/assets/26.0/26.3.jpg"]
 					},
-					price: "$8,600 mxn"
+					price: "$8,500 mxn"
 				}
 
 			when "13"
@@ -427,7 +427,7 @@ module PagesHelper
 					id: 9,
 					name: "Mesa de centro María" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 900 mm" , largo: "Largo: 1,800" , alto: "Alto: 760 mm"}, 
+					dimentions: {ancho: "Ancho: 900 mm", largo: "Largo: 1,800" , alto: "Alto: 760 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 					category: "Mesas de Centro",
 					images: {
@@ -449,7 +449,7 @@ module PagesHelper
 						hero: "/assets/22.0/22.8.jpg", 
 						all: ["/assets/22.0/22.1.jpg", "/assets/22.0/22.2.jpg", "/assets/22.0/22.3.jpg"]
 					},
-					price: "$7,200 mxn"
+					price: "$6,200 mxn"
 				}
 
 			when "15"	
@@ -457,14 +457,14 @@ module PagesHelper
 					id: 21,
 					name: "Escritorio Krafft" , 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
-					dimentions: {ancho: "Ancho: 750 mm", largo: "Largo: 1,400", alto: "Alto: 760 mm" },
+					dimentions: {ancho: "Ancho: 750 mm", largo: "Largo: 1,400", alto: "Alto: 760 mm"},
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 					category: "Escritorios",
 					images: {
 						hero: "/assets/21.0/21.1.jpg", 
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
-					price: "$6,900 mxn"
+					price: "$6,200 mxn"
 				}
 			end
 		end
