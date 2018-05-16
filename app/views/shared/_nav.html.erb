@@ -1,4 +1,54 @@
-<%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also I had to include the equal symbol "=" or the tag does not work -->
+<!-- <%= javascript_include_tag "functions.js" %> --> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also I had to include the equal symbol "=" or the tag does not work -->
+
+<nav data-spy='affix' id='mainmobile'>
+  <div class='logo'>
+    Glas.
+  </div>
+
+  <ul>
+    <li>
+      <%= link_to "Home", {controller: "pages", action: "home", anchor: "home", class: "home active"}%>
+    </li>
+
+    <li>
+        <%= link_to "Acerca", {controller: "pages", action: "home", anchor: "about"} %>
+    </li>
+
+    <li>
+      <%= link_to "Muebles", {controller: "pages", action: "home", anchor: "portfolio"} %>
+    </li>
+
+    <% if params[:id] != nil %>
+      <% if mobile_device? %>
+        <li>
+          <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfoliomobile"} %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to "Ver Mueble", {controller: "pages", action: "portfolio", id: params[:id], anchor: "portfolioslider"} %>
+        </li>
+      <% end %>
+    <% end %>
+
+   <!--  <li>
+      <a href='#'>
+        Blog
+      </a>
+      <ul class='dropdown'>
+        <li>
+          <a href='blog.html'>Blog</a>
+        </li>
+        <li>
+          <a href='single.html'>Blog - single</a>
+        </li>
+      </ul>
+    </li> -->
+    
+    <li>
+     <%= link_to "Contacto", anchor: "contact" %>
+    </li>
+  </ul>
+</nav>
 
 <nav data-spy='affix' id='main'>
   <div class='logo'>
