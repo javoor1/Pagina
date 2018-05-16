@@ -191,7 +191,7 @@ module PagesHelper
 						hero: "/assets/26.0/26.8.jpg", 
 						all: ["/assets/26.0/26.1.jpg", "/assets/26.0/26.2.jpg", "/assets/26.0/26.3.jpg"]
 					},
-					price: "$8,500 mxn"
+					price: "$8,300 mxn"
 				}
 
 			when "13"
@@ -419,7 +419,7 @@ module PagesHelper
 						hero: "/assets/26.0/26.8.jpg", 
 						all: ["/assets/26.0/26.1.jpg", "/assets/26.0/26.2.jpg", "/assets/26.0/26.3.jpg"]
 					},
-					price: "$8,500 mxn"
+					price: "$8,300 mxn"
 				}
 
 			when "13"

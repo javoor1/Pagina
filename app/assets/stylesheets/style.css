@@ -86,6 +86,7 @@ section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-tra
 section.title-block { height: 50% !important; min-height: 50%; }
 section .block { padding: 40px; }
 
+section#about .centered { height: 645px; padding: 100px 20px;}
 
 
 img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
