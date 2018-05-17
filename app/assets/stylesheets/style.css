@@ -86,8 +86,8 @@ section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-tra
 section.title-block { height: 50% !important; min-height: 50%; }
 section .block { padding: 40px; }
 
-/*section#about .centered { height: 645px; padding: 100px;}
-*/
+
+
 
 img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
 section#portfolioslider {max-width: 100%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
