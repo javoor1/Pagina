@@ -86,10 +86,10 @@ section#portfolio .item:hover img { -webkit-transform: scale(1.1, 1.1); -moz-tra
 section.title-block { height: 50% !important; min-height: 50%; }
 section .block { padding: 40px; }
 
-section#about .centered { height: 645px;}
+section#about .centered { height: 645px; padding-top: 50px;}
 
 
-img.fs { min-height: 95%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+img.fs { min-height: 100%; min-width: 100%; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
 section#portfolioslider {max-width: 100%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
 div#test {max-width: 90%; min-width: 900px; max-height: 800px; min-height: 800px; padding-bottom: 0px; padding-top: 0px; }
 
@@ -159,9 +159,9 @@ blockquote { font-family: Georgia; font-style: italic; font-size: 1.3em; color: 
   nav#main ul li ul.dropdown li:hover a { background: #ededed; color: #000; }
   nav#main ul li:last-child { border-right: 1px solid #222; }
   nav#main ul li:hover ul.dropdown { display: block; }
-  @media screen and (max-width: 620px) { nav#main ul { position: absolute; width: 100%; top: -2px; }
+  @media screen and (max-width: 620px) { nav#main ul { position: absolute; width: 100%; top: -1px; }
 
-    nav#main ul:after { font-family: 'fontAwesome'; content: '\f0c9'; height: 79px; font-size: 21px; width: 80px; display: block; line-height: 80px; border-left: 1px solid #16a085; border-bottom: 1px solid #16a085; float: right; text-align: center; background: #16a085; }
+    nav#main ul:after { font-family: 'fontAwesome'; content: '\f0c9'; height: 79px; font-size: 21px; width: 80px; display: block; line-height: 80px; border-left: 1px solid #16a085;  float: right; text-align: center; background: #16a085; }
     
     nav#main ul li { display: none; min-height: 30px; height: auto; line-height: 30px; position: relative; }
     nav#main ul li ul.dropdown { display: block; position: relative; text-align: center; width: 100%; top: auto; left: auto; right: auto; bottom: auto; }
