@@ -20,6 +20,7 @@
 
     <%= yield %>
     
+    <%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also I had to include the equal symbol "=" or the tag does not work -->
     <%= render 'shared/nav' %>
   
   </body>

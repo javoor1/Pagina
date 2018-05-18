@@ -152,16 +152,16 @@ module PagesHelper
 			when "10"
 				@furniture = {
 					id: 21,
-					name: "Escritorio Krafft", 
+					name: "Escritorio Yoko", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: {ancho: "Ancho: 1,210 mm" ,  largo: "Largo: 600 mm" , alto: "Alto: 760 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Escritorios",
 					images: {
-						hero: "/assets/21.0/21.8.jpg", 
-						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
+						hero: "/assets/1.0/1.1.jpg", 
+						all: ["/assets/1.0/1.1.jpg", "/assets/1.0/1.2.jpg", "/assets/1.0/1.3.jpg"]
 					},
-					price: "$6,200 mxn"
+					price: "$8,700 mxn"
 				}
 
 			when "11"
@@ -241,7 +241,7 @@ module PagesHelper
 			end
 
 		else
-		  case id 
+		  case id
 			when "1"
 				@furniture = {
 					id: 5,
@@ -380,16 +380,16 @@ module PagesHelper
 			when "10"
 				@furniture = {
 					id: 21,
-					name: "Escritorio Krafft", 
+					name: "Escritorio Yoko", 
 					material: "Vidrio templado , 10mm de grosor , Herrajes de acero inoxidable",
 					dimentions: {ancho: "Ancho: 1,210 mm" ,  largo: "Largo: 600 mm" , alto: "Alto: 760 mm"}, 
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."	,
 					category: "Escritorios",
 					images: {
-						hero: "/assets/21.0/21.8.jpg", 
-						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
+						hero: "/assets/1.0/1.1.jpg", 
+						all: ["/assets/1.0/1.1.jpg", "/assets/1.0/1.2.jpg", "/assets/1.0/1.3.jpg"]
 					},
-					price: "$6,200 mxn"
+					price: "$8,700 mxn"
 				}
 
 			when "11"
