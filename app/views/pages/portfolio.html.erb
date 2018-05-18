@@ -1,3 +1,5 @@
+<%= javascript_include_tag "functions.js" %> <!-- for some reason the navbar is loading only at the beggining in mobile but it does not load after so I had to call the JS again, also I had to include the equal symbol "=" or the tag does not work -->
+
 <% furniture =  description(params[:id]) %>
 <% images = furniture[:images][:all] %>
 
@@ -74,6 +76,8 @@
               <%= furniture[:dimentions][:ancho] %> <br>
               <%= furniture[:dimentions][:alto] %> <br>
               <%= furniture[:dimentions][:largo] %> <br>
+              <br> Material: <br>
+              <%= furniture[:material] %> <br>
               <br> Precio: <br>
               <%= furniture[:price] %>
             </li>
@@ -111,11 +115,12 @@
       </div>
       <div class="floatright">
         <p>
-          <%= furniture[:name] %> <br>
           <br> Medidas:<br>
           <%= furniture[:dimentions][:ancho] %> <br>
           <%= furniture[:dimentions][:alto] %> <br>
           <%= furniture[:dimentions][:largo] %> <br>
+          <br> Material:<br>
+          <%= furniture[:material] %> <br>
           <br> Precio: <br>
           <%= furniture[:price] %>
         </p>
