@@ -27,7 +27,7 @@ module PagesHelper
 						all: ["/assets/5.0/5.1.jpg", "/assets/5.0/5.2.jpg", "/assets/5.0/5.3.jpg", "/assets/5.0/5.4.jpg", "/assets/5.0/5.5.jpg"]
 					},
 					price: "$4,100 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1817854/glas-muebles/banca-valeria"
 				}
 
 			when "2"
@@ -59,7 +59,7 @@ module PagesHelper
 						all: ["/assets/7.0/7.1.jpg", "/assets/7.0/7.2.jpg", "/assets/7.0/7.3.jpg"]
 					},
 					price: "$5,150 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820237/glas-muebles/mesa-de-centro-castro"
 				}
 
 			when "4"
@@ -75,7 +75,7 @@ module PagesHelper
 						all: ["/assets/23.0/23.1.jpg", "/assets/23.0/23.2.jpg", "/assets/23.0/23.3.jpg"]
 					},
 					price: "$3,700 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820917/glas-muebles/mesa-de-centro-cortes"
 				}
 
 	 		when "5"
@@ -91,7 +91,7 @@ module PagesHelper
 						all: ["/assets/24.0/24.1.jpg", "/assets/24.0/24.2.jpg", "/assets/24.0/24.3.jpg"]
 					},
 					price: "$3,700 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820862/glas-muebles/mesa-de-centro-cielo"
 				}
 
 			when "6"
@@ -123,7 +123,7 @@ module PagesHelper
 						all: ["/assets/25.0/25.1.jpg", "/assets/25.0/25.2.jpg", "/assets/25.0/25.3.jpg"]
 					},
 					price: "$6,900 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820892/glas-muebles/escritorio-lorca"
 				}
 
 			when "8"
@@ -155,7 +155,7 @@ module PagesHelper
 						all: ["/assets/28.0/28.1.jpg", "/assets/28.0/28.2.jpg", "/assets/28.0/28.3.jpg"]
 					},
 					price: "$6,500 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820879/glas-muebles/escritorio-helena"
 				}
 
 			when "10"
@@ -251,7 +251,7 @@ module PagesHelper
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
 					price: "$6,200 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820246/glas-muebles/escritorio-krafft"
 				}
 			end
 
@@ -270,7 +270,7 @@ module PagesHelper
 						all: ["/assets/5.0/5.1.jpg", "/assets/5.0/5.2.jpg", "/assets/5.0/5.3.jpg", "/assets/5.0/5.4.jpg", "/assets/5.0/5.5.jpg"]
 					},
 					price: "$4,100 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1817854/glas-muebles/banca-valeria"
 				}
 
 			when "2"
@@ -302,7 +302,7 @@ module PagesHelper
 						all: ["/assets/7.0/7.1.jpg", "/assets/7.0/7.2.jpg", "/assets/7.0/7.3.jpg"]
 					},
 					price: "$5,150 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820237/glas-muebles/mesa-de-centro-castro"
 				}
 
 			when "4"
@@ -318,7 +318,7 @@ module PagesHelper
 						all: ["/assets/23.0/23.1.jpg", "/assets/23.0/23.2.jpg", "/assets/23.0/23.3.jpg"]
 					},
 					price: "$3,700 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820917/glas-muebles/mesa-de-centro-cortes"
 				}
 
 	 		when "5"
@@ -334,7 +334,7 @@ module PagesHelper
 						all: ["/assets/24.0/24.1.jpg", "/assets/24.0/24.2.jpg", "/assets/24.0/24.3.jpg"]
 					},
 					price: "$3,700 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820862/glas-muebles/mesa-de-centro-cielo"
 				}
 
 			when "6"
@@ -366,7 +366,7 @@ module PagesHelper
 						all: ["/assets/25.0/25.1.jpg", "/assets/25.0/25.2.jpg", "/assets/25.0/25.3.jpg"]
 					},
 					price: "$6,900 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820892/glas-muebles/escritorio-lorca"
 				}
 
 			when "8"
@@ -398,7 +398,7 @@ module PagesHelper
 						all: ["/assets/28.0/28.1.jpg", "/assets/28.0/28.2.jpg", "/assets/28.0/28.3.jpg"]
 					},
 					price: "$6,500 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820879/glas-muebles/escritorio-helena"
 				}
 
 			when "10"
@@ -494,7 +494,7 @@ module PagesHelper
 						all: ["/assets/21.0/21.1.jpg", "/assets/21.0/21.2.jpg", "/assets/21.0/21.3.jpg"]
 					},
 					price: "$6,200 mxn",
-					kichink_url: ""
+					kichink_url: "https://www.kichink.com/buy/1820246/glas-muebles/escritorio-krafft"
 				}
 			end
 		end

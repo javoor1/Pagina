@@ -71,6 +71,13 @@
           <h3><%= furniture[:name] %></h3>
           <ul class='list'>
             <li>
+              <% if furniture[:kichink_url] != nil %>
+                <br> Comprar en Kichink: <br>
+                <%= link_to( image_tag("kichink_imagen.png"), furniture[:kichink_url], target: :blank) %><br>
+              <% else %>
+                <br> Visitar tienda en Kichink: <br>
+                <%= link_to( image_tag("kichink_imagen.png"), "https://www.kichink.com/stores/glas-muebles/", target: :blank) %><br>
+              <% end %>
               <br> Medidas:<br>
               <%= furniture[:dimentions][:ancho] %> <br>
               <%= furniture[:dimentions][:alto] %> <br>
@@ -78,7 +85,7 @@
               <br> Material: <br>
               <%= furniture[:material] %> <br>
               <br> Precio: <br>
-              <%= furniture[:price] %>
+              <%= furniture[:price] %><br>
             </li>
           </ul>
         </div>
@@ -114,6 +121,13 @@
       </div>
       <div class="floatright">
         <p>
+          <% if furniture[:kichink_url] != nil %>
+            <br> Comprar en Kichink: <br>
+            <%= link_to( image_tag("kichink_imagen.png"), furniture[:kichink_url], target: :blank) %><br>
+          <% else %>
+            <br> Visitar tienda en Kichink: <br>
+            <%= link_to( image_tag("kichink_imagen.png"), "https://www.kichink.com/stores/glas-muebles/", target: :blank) %><br>
+          <% end %>
           <br> Medidas:<br>
           <%= furniture[:dimentions][:ancho] %> <br>
           <%= furniture[:dimentions][:alto] %> <br>
@@ -121,11 +135,8 @@
           <br> Material:<br>
           <%= furniture[:material] %> <br>
           <br> Precio: <br>
-          <%= furniture[:price] %>
+          <%= furniture[:price] %><br>
         </p>
-          <br> Comprar en Kichink: <br>
-          <%= link_to( image_tag("kichink_imagen.png"), furniture[:kichink_url]) %>
-
       </div> 
 
     </div>   
